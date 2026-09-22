@@ -1,32 +1,35 @@
-# Free local ensemble generation
+# Free local recorded-instrument arrangements
 
-Danny requires this workflow to be free. There is no paid API adapter, credit purchase, account requirement, cloud generation or audio upload. Stable Audio 3 Medium runs on the Mac through the official Apple Silicon MLX runtime. Ordinary computer power/storage use remains local.
+Listening review rejected the first Stable Audio 3 drafts because sound quality did not meet the target. The default engine is now a score-driven sampler and arranger, with recordings of acoustic instruments. This is an attempt to improve tone and preserve the phrase, not a verified claim of professional performance.
 
-## One-time setup
+## Setup and sources
 
-Install the main app first, then run from the repository:
+After installing the core app, run:
 
 ```sh
-.venv/bin/python scripts/install_local_music.py
+.venv/bin/python scripts/install_instruments.py
 ```
 
-This setup needs an Apple Silicon Mac, internet access for the initial downloads, and approximately 8 GB of free disk space. The script installs into `data/runtime/audio-env`, keeps upstream code under `data/runtime/stable-audio-3`, verifies all four model files against pinned SHA-256 checksums, and enables generation only after setup succeeds. Dependencies are separate from the studio server environment. Interrupted weight downloads can resume by running setup again.
+The installer downloads 140 selected WAV recordings (about 364 MB) into ignored `data/instruments`. It verifies pinned Git blob hashes and records the catalog hash. It needs no account, subscription, plugin, GPU or paid API. Rendering makes no network requests. The app's existing NumPy, SciPy and SoundFile dependencies perform the sampling and mixing.
 
-Runtime revision: `779434a908193105335fd8d833418603625b2859` from the [official repository](https://github.com/Stability-AI/stable-audio-3/tree/779434a908193105335fd8d833418603625b2859/optimized/mlx).
-Model revision: `da6edc54ddba10bfd79a077102ded687f80e882b` from the [official optimized model](https://huggingface.co/stabilityai/stable-audio-3-optimized/tree/da6edc54ddba10bfd79a077102ded687f80e882b/MLX).
+The grand piano is the close-miked Steinway B from [VCSL](https://github.com/sgossner/VCSL/tree/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e). Violin, cello section and plucked contrabass come from [VSCO 2 CE](https://github.com/sgossner/VSCO-2-CE/tree/440300901dfe9275fd84e0b7763af1f8443ae62e). Percussion comes from VCSL. Both source libraries declare CC0-1.0. The pinned catalog is `mit2009_studio/instruments.json`; recordings stay out of Git.
 
-After installation, generation sets `HF_HUB_OFFLINE=1` and disables Hugging Face telemetry. The runtime receives only the synthesized wordless guide and style prompt. It receives neither the original recording nor a transcript. No public Gradio server is launched.
+The cello and contrabass samples label middle C as C3, unlike the piano and violin samples. Their catalog root notes include a one-octave correction, checked against actual waveform fundamentals. One quiet bass take with an unstable pitch attack was excluded in favor of its alternate take. The sampler checks each used file's hash before decoding it.
 
-## User flow
+## What the arranger does
 
-Upload one phrase → Find my melody → listen → Make three versions → compare/rate/select → continue to photographs. There is no bed/effects chooser or provider settings panel. Every request creates three fresh candidate files. Generation, ratings and final creative approval remain separate actions.
+The accepted score is snapshotted by hash alongside the unchanged audible guide. Every melody note retains its pitch, order and relative onset. Only the opening wait is removed. A recorded grand piano plays this line, with small dynamic variations and acoustic release tails. There are no vocal samples, source-recording samples, lyrics or generative voice output in this engine.
 
-The current three briefs are bass-heavy dance, piano/violin/cello chamber trio, and piano/upright-bass/brushed-drums jazz trio. The model is conditioned on the saved guide with transformation level 0.70, guidance 2.0 and eight steps. These are starting experiment settings, not guarantees of fidelity. Prompts, seeds, guide hashes and model/runtime revisions are retained with candidates. Each worker subprocess has a five-minute timeout; retry is explicit and preserves completed candidates.
+The three arrangements are Piano house (piano, electronic sub-bass and recorded percussion), Piano & strings (piano, solo violin and cello section), and Acoustic jazz trio (piano, plucked contrabass and light recorded drums). The dance sub-bass is intentionally synthesized; it is not labeled as an acoustic recording. The cello source is a section, and the drums use light hits/sticks, not a claimed brush recording.
 
-Masters are verified as 15-second 48 kHz stereo WAVs, given conservative constant-gain mastering, and checked for finite audible samples. Opening silence is removed for a prompt entrance; internal rests stay intact. The existing original recording, guide and earlier renders are never rewritten.
+A small heuristic fits triads to local note windows, favors common tones between adjacent harmonies, adds restrained inner parts and phrase-ending answers, and balances accompaniment below the melody. The lead remains rubato while accompaniment has a pulse. Sample velocity layers, round-robin alternatives where available, panning and a short room response vary the performance. The sampler never loops a stock backing track.
 
-## Quality and licensing limits
+Each render saves a fresh `arrangement.json`, separate melody/accompaniment stems, and the 15-second 48 kHz stereo master. Previous drafts and the melody guide are never overwritten. Ratings, selection and creative approval remain Danny's actions.
 
-A note guide can be misread; a generative arrangement can drift from the melody or add unwanted vocal-like material. Technical tests cannot establish convincing musicianship. Listen to each actual output and compare it with the accepted guide before using it.
+## Limits and listening review
 
-This local prototype evaluates the model for the course project. Weights use the [Stability AI Community License](https://stability.ai/license), and the bundled T5Gemma encoder has Gemma terms. The source runtime is MIT-licensed. These are distinct from an unrestricted license for institutional/commercial deployment; review the applicable model terms before any wider deployment. There is no paid fallback: a missing or failed local model produces a clear setup/error message.
+Recorded instruments improve the source material but cannot guarantee a convincing ensemble. The arranger is a heuristic, not a musician: harmony can be unsuitable for a chromatic phrase, accompaniment may not follow expressive timing well, and strings do not have a true legato transition engine. Very short extracted notes can still sound fragmented. The accepted score may itself need correction, but this change does not silently alter it. Listen for tone, phrasing, blend and recognition before calling the quality goal met.
+
+## Earlier model experiment
+
+The first free model adapter remains in `providers/ensemble.py`, and its drafts are accessible under Earlier ensemble versions. New requests use recorded instruments. Existing model jobs retain their original renderer when explicitly retried; no automatic fallback or paid service is enabled. Its 6.9 GB weights and isolated MLX environment remain local. The model experiment is not needed for the current workflow and is subject to its separate Stability Community and Gemma terms.

@@ -104,6 +104,10 @@ class Worker:
                         a["guide_file"] = self.store.path(guide["path"])
                         if media.digest(a["guide_file"]) != guide["sha256"]:
                             raise ValueError("The saved melody guide changed. Prepare and generate again.")
+                        if guide.get("score_sha256"):
+                            a["score_file"] = self.store.path(guide["score_path"])
+                            if media.digest(a["score_file"]) != guide["score_sha256"]:
+                                raise ValueError("The saved melody score changed. Prepare and generate again.")
                     sources.append(a)
                 context = {}
                 for stage, identity in c["context"].items():

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mit-2009-social-studio"
-version = "0.4.0"
+version = "0.5.0"
 description = "Human-led candidate selection for MIT 2.009 media"
 requires-python = ">=3.12"
 dependencies = ["fastapi>=0.115,<1", "uvicorn>=0.30,<1", "python-multipart>=0.0.20,<1", "numpy>=2,<3", "Pillow>=11,<13", "httpx>=0.28,<1", "librosa>=1,<2"]
@@ -16,7 +16,7 @@ dev = ["pytest>=8,<10", "ruff>=0.9,<1"]
 mit2009-studio = "mit2009_studio.server:main"
 
 [tool.setuptools.package-data]
-mit2009_studio = ["web/*", "web/brand-2026/*", "presets.json", "schema.sql"]
+mit2009_studio = ["web/*", "web/brand-2026/*", "presets.json", "instruments.json", "schema.sql"]
 
 [tool.setuptools.packages.find]
 include = ["mit2009_studio*"]

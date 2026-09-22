@@ -1,3 +1,17 @@
+# Recorded-instrument quality revision
+
+Listening review rejected the first model drafts because sound quality did not meet the target. The revised engine performs the accepted note score with a recorded grand piano and independently written accompaniment. It does not treat the earlier passing technical tests as evidence of satisfactory sound.
+
+34 tests passed in 30.11 seconds on September 22, 2026; Ruff and JavaScript syntax checks passed. Four new tests cover exact lead pitch/order/onset preservation across all three styles (including a note near the end), sample pitch shifting, rejection of changed samples and score files, and the complete three-draft API/export path. CI uses explicitly synthetic instrument fixtures and makes no claim about real acoustic sound quality.
+
+The actual pinned libraries were installed and checked separately. Measurement caught a one-octave naming difference in the cello and bass libraries, which was corrected in the catalog. A quiet bass take with an unstable attack was excluded. Final piano/violin/cello/bass spot checks measured MIDI pitches 60.038, 59.939, 39.974 and 40.026 respectively against expected 60, 60, 40 and 40. These are spot checks, not a complete perceptual evaluation of the library.
+
+The final live batch completed in 3.884 seconds. All three outputs preserve the 31 accepted lead notes and relative onsets, are distinct 15-second 48 kHz stereo WAVs, start with audible signal, remain below clipping, and match their recorded hashes. The original recording, normalized source and accepted guide hashes are unchanged. Measurements, stem files and arrangement scores are under ignored `data/verification/recorded-ensembles/` and `data/candidate-engine/renders/`. The embedded browser displayed all three new cards, and Piano & strings playback advanced without a media error. Ratings, selection and approval were not set by the assistant.
+
+Naturalness, harmony, phrasing and ensemble quality still need Danny's listening review. The heuristic accompaniment and sample articulation are material limitations; see LOCAL-MUSIC.md.
+
+---
+
 # Free local ensemble milestone
 
 30 tests passed in 27.20 seconds on September 22, 2026. Ruff and JavaScript syntax checks passed. The two new ensemble tests exercise the real subprocess/file boundary with a clearly identified stand-in: exactly three choices, only the synthesized guide passed to the renderer, offline settings, guide integrity, zero API cost, unchanged originals, and no automatic creative decisions. Those tests run without model weights on CI and do not establish musical quality.

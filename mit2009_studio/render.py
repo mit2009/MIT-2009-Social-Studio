@@ -11,6 +11,8 @@ from PIL import Image, ImageDraw, ImageFont, ImageOps
 from . import media
 from .analysis import audio_features, image_features
 from .providers import AudioRequest
+from .providers.arranged import PROVIDER as RECORDED_PROVIDER
+from .providers.arranged import RecordedEnsembleProvider
 from .providers.ensemble import PROVIDER, LocalEnsembleProvider
 from .providers.local import LocalAudioProvider
 
@@ -32,20 +34,27 @@ def render_audio(settings, sources, context, folder, size, progress):
     by_role = {a["role"]: a for a in sources}
     request = AudioRequest(
         reference=by_role["reference"]["guide_file"]
-        if settings["provider"] == PROVIDER
+        if settings["provider"] in (PROVIDER, RECORDED_PROVIDER)
         else by_role["reference"]["file"],
         bed=by_role.get("bed", {}).get("file"),
         effect=by_role.get("effect", {}).get("file"),
         style=settings["style"],
         duration=settings["duration"],
         seed=settings["seed"],
+        score=by_role["reference"].get("score_file"),
     )
     progress(
         "Interpreting your sound"
         if settings["style"]["mode"] != "original"
         else "Preserving your original recording"
     )
-    provider = LocalEnsembleProvider() if settings["provider"] == PROVIDER else LocalAudioProvider()
+    provider = (
+        RecordedEnsembleProvider()
+        if settings["provider"] == RECORDED_PROVIDER
+        else LocalEnsembleProvider()
+        if settings["provider"] == PROVIDER
+        else LocalAudioProvider()
+    )
     result = provider.generate(request, folder)
     info = audio_features(result.output, settings["duration"])
     info["process"] = result.metadata

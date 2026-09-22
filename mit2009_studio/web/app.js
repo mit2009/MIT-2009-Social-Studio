@@ -213,15 +213,15 @@ function card(c) {
 function comparison() {
   if (stage === "audio") {
     const briefs = [
-      ["#1f78bb", "Bass-heavy dance", "Your phrase becomes the hook: deep bass, a tight drum groove, and a lead that opens into a bigger arrangement."],
-      ["#924c9e", "Chamber trio", "Piano, violin, and cello listen and respond—sharing your melody with warmth, space, and expressive phrasing."],
-      ["#ee3a80", "Jazz trio", "Piano, upright bass, and drums find the swing in your phrase, then playfully develop it together."],
+      ["#1f78bb", "Piano house", "Recorded grand piano carries your phrase above deep bass and a crisp dance pulse."],
+      ["#924c9e", "Piano & strings", "Grand piano keeps your melody; violin and cellos add soft, moving harmony."],
+      ["#ee3a80", "Acoustic jazz trio", "Recorded piano, plucked upright bass and light drums play around your phrase."],
     ];
-    const currentCandidates = state.candidates.filter(c => c.stage === "audio" && c.settings.provider === "local-stable-audio-3");
+    const currentCandidates = state.candidates.filter(c => c.stage === "audio" && ["local-recorded-ensembles", "local-stable-audio-3"].includes(c.settings.provider));
     const batches = state.batches.filter(b => currentCandidates.some(c => c.batch_id === b.id));
     const batch = batches.find(b => b.id === activeBatch) || batches.at(-1);
-    const older = state.candidates.filter(c => c.stage === "audio" && c.settings.provider !== "local-stable-audio-3");
-    const versions = batch ? `<div class="batch-heading"><span class="eyebrow">Your melody, three ways</span><p class="muted">Free local drafts. Listen for your phrase, then rate and choose.</p></div><div class="candidate-grid">${currentCandidates.filter(c => c.batch_id === batch.id).map(card).join("")}</div>${batches.length > 1 ? `<details class="history"><summary>Earlier ensemble versions</summary><div class="history-buttons">${batches.map((b,i) => `<button class="secondary" data-batch="${b.id}">Batch ${i+1}</button>`).join("")}</div></details>` : ""}` : "";
+    const older = state.candidates.filter(c => c.stage === "audio" && !["local-recorded-ensembles", "local-stable-audio-3"].includes(c.settings.provider));
+    const versions = batch ? `<div class="batch-heading"><span class="eyebrow">Your melody, three ways</span><p class="muted">${currentCandidates.some(c => c.batch_id === batch.id && c.settings.provider === "local-recorded-ensembles") ? "Recorded instruments. Your melody stays in the lead. Listen, then rate and choose." : "Earlier model experiment. Listen for your phrase, then rate and choose."}</p></div><div class="candidate-grid">${currentCandidates.filter(c => c.batch_id === batch.id).map(card).join("")}</div>${batches.length > 1 ? `<details class="history"><summary>Earlier ensemble versions</summary><div class="history-buttons">${batches.map((b,i) => `<button class="secondary" data-batch="${b.id}">Batch ${i+1}${currentCandidates.some(c => c.batch_id === b.id && c.settings.provider === "local-recorded-ensembles") ? " · Recorded instruments" : " · Earlier model"}</button>`).join("")}</div></details>` : ""}` : "";
     return `${versions}` + `${batch ? "" : `<section class="ensemble-preview"><div class="batch-heading"><span class="eyebrow">Three ensembles. Your musical idea.</span></div><p class="muted">Check your melody, then hear it interpreted three ways. You decide which version carries your idea.</p><div class="candidate-grid">${briefs.map(([color, name, description]) => `<article class="ensemble-brief" style="--ensemble-color:${color}"><span class="tag">Free local draft</span><h3>${name}</h3><p>${description}</p></article>`).join("")}</div></section>`}${older.length ? `<details class="history"><summary>Earlier sound experiments</summary><p class="muted">These came from the retired voice-effects prototype and may contain recognizable words. They are saved as history, not examples of the new ensemble direction.</p><div class="candidate-grid">${older.map(c => `<article class="ensemble-brief"><h3>${esc(c.settings.style.name)}</h3>${c.status === "ready" ? `<audio controls preload="none" src="${mediaUrl(c)}"></audio>` : `<p>${esc(c.status)}</p>`}</article>`).join("")}</div></details>` : ""}`;
   }
   const batches = state.batches.filter((b) => b.stage === stage);
@@ -239,7 +239,7 @@ function comparison() {
 }
 function advancePanel() {
   const c = selectedCandidate(stage);
-  if (stage === "audio" && c?.settings.provider !== "local-stable-audio-3") return "";
+  if (stage === "audio" && !["local-recorded-ensembles", "local-stable-audio-3"].includes(c?.settings.provider)) return "";
   if (!c) return "";
   if (stage !== "assembly")
     return `<div class="advance"><p><strong>${esc(c.settings.style.name)}</strong> is your selected ${names[stage].toLowerCase()}.</p><button data-stage="${stages[stages.indexOf(stage) + 1]}">Continue to ${names[stages[stages.indexOf(stage) + 1]]} →</button></div>`;

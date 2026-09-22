@@ -36,7 +36,7 @@ output.with_suffix(".request.json").write_text(json.dumps({"args": args, "offlin
 
 
 @pytest.mark.media
-def test_free_ensemble_api_uses_only_wordless_guide(tmp_path, local_runtime):
+def test_previous_model_uses_only_wordless_guide(tmp_path, local_runtime):
     app = create_app(tmp_path / "data", start_worker=False)
     studio = app.state.studio
     source, _ = make_sources(tmp_path / "fixtures")
@@ -44,13 +44,8 @@ def test_free_ensemble_api_uses_only_wordless_guide(tmp_path, local_runtime):
     asset = studio.add_asset(project["id"], "reference", source.name, source)
     guide = studio.prepare_melody(asset["id"])
     before = media.digest(studio.store.path(asset["original_path"]))
-    with TestClient(app) as client:
-        response = client.post(
-            f"/api/projects/{project['id']}/generate",
-            headers={"X-Studio-Request": "1"},
-            json={"stage": "audio", "asset_ids": [asset["id"]]},
-        )
-        assert response.status_code == 202, response.text
+    with TestClient(app):
+        studio.enqueue(project["id"], Generate(stage="audio", asset_ids=[asset["id"]]), ensemble="model")
         app.state.worker.perform(app.state.worker.claim())
         detail = studio.detail(project["id"])
         assert len(detail["candidates"]) == 3
@@ -80,10 +75,10 @@ def test_ensemble_requires_checked_guide_and_rejects_tampering(studio, project, 
     asset = source_assets[0]
     request = Generate(stage="audio", asset_ids=[asset["id"]])
     with pytest.raises(ValueError, match="Check your melody"):
-        studio.enqueue(project["id"], request, ensemble=True)
+        studio.enqueue(project["id"], request, ensemble="model")
     guide = studio.prepare_melody(asset["id"])
     path = studio.store.path(guide["path"])
     path.write_bytes(path.read_bytes() + b"changed")
     with pytest.raises(ValueError, match="guide changed"):
-        studio.enqueue(project["id"], request, ensemble=True)
+        studio.enqueue(project["id"], request, ensemble="model")
     assert studio.detail(project["id"])["candidates"] == []

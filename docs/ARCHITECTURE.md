@@ -1,6 +1,6 @@
 # Architecture and developer guide
 
-> Audio now uses `providers/ensemble.py`: a separate local MLX subprocess receives only the saved wordless guide. `melody.py` prepares the guide; the worker validates its snapshotted hash. The HTTP audio route always requests exactly three free ensemble drafts. Legacy DSP stays available only internally for regression coverage. See LOCAL-MUSIC.md for setup and model provenance.
+> Current audio uses `providers/arranged.py`: a local sampler performs the accepted score using recorded CC0 instruments. `melody.py` prepares the note guide; the worker validates both score and guide hashes. The HTTP route requests three free drafts. Earlier MLX and DSP adapters remain for history/regression. See LOCAL-MUSIC.md for setup and musical limits.
 
 ## One application
 
@@ -33,7 +33,9 @@ flowchart LR
 | `service.py` | Project/asset/candidate operations; selections, stale work, approvals, exports |
 | `store.py`, `schema.sql` | Short SQLite transactions, IDs, JSON serialization, data-path boundary |
 | `jobs.py` | Persisted batch queue, one worker, progress, restart recovery, explicit retry |
-| `providers/__init__.py`, `providers/local.py` | Small audio request/result boundary and a local DSP implementation |
+| `providers/__init__.py`, `providers/arranged.py` | Audio request/result boundary, note-preserving arranger, sample player and mix |
+| `instruments.json`, `scripts/install_instruments.py` | Pinned CC0 sample catalog and verified one-time download |
+| `providers/ensemble.py`, `providers/local.py` | Earlier model and DSP adapters retained for history/regression |
 | `render.py` | Video, transparent Keyword, and final assembly; audio orchestration |
 | `media.py` | FFmpeg/FFprobe, image normalization, hashing, sample/frame I/O, technical verification |
 | `analysis.py` | Cheap audio and image features with explicit limitations |

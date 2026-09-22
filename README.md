@@ -10,9 +10,9 @@ Built for Danny, Talla, and the 2.009 TAs, with a small student trial as the nex
 
 Danny's revised brief is a musical phrase interpreted by three convincing ensembles, with no recognizable lyrics. The interface now uses the Connect wordmark, supplied color palette and Outfit font, with one musical input and no bed/effects controls.
 
-The melody check extracts estimated notes and plays a voice-free instrumental guide. **Make three versions** uses Stable Audio 3 Medium locally on Apple Silicon to create bass-heavy dance, chamber trio and jazz trio drafts. No API account, subscription or paid generation service is used. A one-time model setup is required; see [LOCAL-MUSIC.md](docs/LOCAL-MUSIC.md).
+The melody check extracts estimated notes and plays a voice-free instrumental guide. **Make three versions** now performs the accepted notes with recorded instruments: Piano house, Piano & strings, and Acoustic jazz trio. A recorded Steinway grand carries the melody; separate parts provide harmony, bass, percussion and phrasing. No API account, subscription or paid generation service is used. A one-time instrument download is required; see [LOCAL-MUSIC.md](docs/LOCAL-MUSIC.md).
 
-The goal remains convincing ensemble performances in which the person recognizes their own phrase. These are experimental model-generated drafts, not a claim that the professional-quality goal has been met. Listen for melody fidelity, believable interplay, and unwanted vocal sounds. The earlier voice-effects experiments remain collapsed in history, with their files unchanged.
+The goal remains convincing ensemble performances in which the person recognizes their own phrase. Listening review rejected the initial model drafts for insufficient sound quality. The recorded-instrument arranger preserves the lead pitches, note order and relative onsets, and builds accompaniment from those notes. This remains a listening experiment; automated checks do not establish convincing musicianship. The earlier voice-effects experiments remain collapsed in history, with their files unchanged.
 
 The existing comparison/rating/selection, video, alpha Keyword, assembly, provenance and approval/export infrastructure remains. The original procedural release is preserved at `0cfe313`.
 
@@ -29,19 +29,19 @@ python3.12 -m venv .venv
 .venv/bin/python -m mit2009_studio.server
 ```
 
-Open **http://127.0.0.1:8773**. Keep the terminal running while rendering. The server binds only to this computer. The core app needs no API key or account. Ensemble generation additionally needs the free Apple Silicon setup below.
+Open **http://127.0.0.1:8773**. Keep the terminal running while rendering. The server binds only to this computer. The core app needs no API key or account. Ensemble generation additionally needs the free instrument setup below.
 
 Install FFmpeg with `brew install ffmpeg` on macOS or `sudo apt install ffmpeg` on Ubuntu/Debian. Check `ffmpeg -version` and `ffprobe -version` before starting. The build must include H.264/libx264 and ProRes encoders.
 
 On a Mac, after setup, double-click **Open 2.009 Studio.command**. The older Test Studio shortcut also opens the new application.
 
-Click **Try the sample project** or open a saved project, then **Find my melody**. The simple guide lets you check what the system heard. On an Apple Silicon Mac, install the free local generator once:
+Click **Try the sample project** or open a saved project, then **Find my melody**. The simple guide lets you check what the system heard. Install the free recorded instruments once:
 
 ```sh
-.venv/bin/python scripts/install_local_music.py
+.venv/bin/python scripts/install_instruments.py
 ```
 
-Then click **Make three versions**, compare the three drafts, rate and select one. The setup downloads about 6.9 GB of model weights plus dependencies into ignored `data/`; each generation runs offline. Your audio remains on this Mac.
+Then click **Make three versions**, compare the three drafts, rate and select one. The setup downloads about 364 MB of CC0 instrument recordings into ignored `data/`; rendering works locally without a model or GPU. Your audio remains on this Mac.
 
 ## Keep your work
 

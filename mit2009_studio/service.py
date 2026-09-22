@@ -13,7 +13,7 @@ from .store import Store, now, packed, uid, unpack
 from .styles import choose_styles
 
 STAGES = ("audio", "video", "text", "assembly")
-VERSION = "0.4.0"
+VERSION = "0.5.0"
 CANDIDATES = """SELECT c.*, (SELECT stars FROM ratings r WHERE r.candidate_id=c.id ORDER BY r.id DESC LIMIT 1)
 AS rating FROM candidates c"""
 
@@ -248,23 +248,32 @@ class Studio:
             raise ValueError("Enter one Keyword.")
         guide = None
         if ensemble:
-            from .providers.ensemble import runtime
+            from .providers import arranged
+            from .providers import ensemble as generated
+
+            music = generated if ensemble == "model" else arranged
+            runtime = music.runtime
 
             if stage != "audio" or len(assets) != 1 or assets[0]["role"] != "reference":
                 raise ValueError("Choose one musical phrase for the three ensembles.")
             if not runtime():
-                raise ValueError("The free local music model needs its one-time setup on this Mac.")
+                raise ValueError("The free instruments need their one-time setup on this Mac.")
             guide = assets[0]["analysis"].get("melody_guide")
             if not guide:
                 raise ValueError("Check your melody before making the three versions.")
             if media.digest(self.store.path(guide["path"])) != guide["sha256"]:
                 raise ValueError("The melody guide changed. Prepare it again before continuing.")
+            if ensemble != "model":
+                score_path = self.store.path(guide["score_path"])
+                score = json.loads(score_path.read_text())
+                if score["guide_sha256"] != guide["sha256"]:
+                    raise ValueError("The melody score no longer matches its guide.")
+                # Bind the actual notes as well as the audible guide to this batch.
+                guide = {**guide, "score_sha256": media.digest(score_path)}
         batch_id, job_id, seed = uid(), uid(), secrets.randbelow(2**31 - 4)
         styles = choose_styles(stage, seed)
         if ensemble:
-            from .providers.ensemble import STYLES
-
-            styles = STYLES
+            styles = music.STYLES
         elif stage == "audio":
             styles.append(
                 {
@@ -312,9 +321,7 @@ class Studio:
                     "presets_version": 1,
                 }
                 if ensemble:
-                    from .providers.ensemble import MODEL, PROVIDER
-
-                    settings.update(provider=PROVIDER, model=MODEL, melody_guide=guide)
+                    settings.update(provider=music.PROVIDER, model=music.MODEL, melody_guide=guide)
                 db.execute(
                     "INSERT INTO candidates(id,project_id,batch_id,stage,slot,kind,settings,context,sources,created_at) VALUES(?,?,?,?,?,?,?,?,?,?)",
                     (

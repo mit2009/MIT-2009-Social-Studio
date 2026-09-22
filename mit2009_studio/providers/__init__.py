@@ -13,6 +13,7 @@ class AudioRequest:
     style: dict
     duration: float
     seed: int
+    score: Path | None = None
 
 
 @dataclass
