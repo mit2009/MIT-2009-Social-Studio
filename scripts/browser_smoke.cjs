@@ -26,7 +26,8 @@ const output = path.resolve(process.env.STUDIO_QA_OUTPUT || "data/verification/m
     assert.equal(await page.locator(".ensemble-brief").count(), 3);
     assert.equal(await page.locator('[data-upload="bed"],[data-upload="effect"]').count(), 0);
     assert.equal(await page.locator(".connect-wordmark").isVisible(), true);
-    assert.equal(await page.locator(".melody-check audio").getAttribute("src"), guide.url);
+    assert.equal(await page.locator(".melody-check audio").getAttribute("src"), guide.url + "?playback=1");
+    assert.equal(await page.getByRole("button", { name: "Make three versions", exact: true }).isEnabled(), true);
     await page.reload();
     await page.getByRole("button", { name: "Check my melody again" }).waitFor();
     await page.screenshot({ path: path.join(output, "desktop.png"), fullPage: true });

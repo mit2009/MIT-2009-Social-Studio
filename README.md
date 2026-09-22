@@ -10,9 +10,11 @@ Built for Danny, Talla, and the 2.009 TAs, with a small student trial as the nex
 
 Danny's revised brief is a musical phrase interpreted by three convincing ensembles, with no recognizable lyrics. The interface now uses the Connect wordmark, supplied color palette and Outfit font, with one musical input and no bed/effects controls.
 
-**This is a preparation milestone, not a finished professional orchestration release.** The local melody check extracts estimated notes and plays a voice-free instrumental guide. Bass-heavy dance, chamber trio and jazz trio are clearly marked as directions in development. New generation through the earlier voice-effects API is paused; old experiments and saved media remain available as history. See [ORCHESTRATION-TRIAL.md](docs/ORCHESTRATION-TRIAL.md) for the concrete experiment and listening acceptance criteria. A paid provider trial still needs authorization and API access.
+The melody check extracts estimated notes and plays a voice-free instrumental guide. **Make three versions** uses Stable Audio 3 Medium locally on Apple Silicon to create bass-heavy dance, chamber trio and jazz trio drafts. No API account, subscription or paid generation service is used. A one-time model setup is required; see [LOCAL-MUSIC.md](docs/LOCAL-MUSIC.md).
 
-The earlier complete four-stage procedural prototype is preserved at commit `0cfe313`. Its project, comparison/rating/selection, video, alpha Keyword, assembly, provenance and approval/export infrastructure remain in this codebase. Existing files and decisions are not migrated or rewritten. New end-to-end music projects await a provider that meets the revised audio brief.
+The goal remains convincing ensemble performances in which the person recognizes their own phrase. These are experimental model-generated drafts, not a claim that the professional-quality goal has been met. Listen for melody fidelity, believable interplay, and unwanted vocal sounds. The earlier voice-effects experiments remain collapsed in history, with their files unchanged.
+
+The existing comparison/rating/selection, video, alpha Keyword, assembly, provenance and approval/export infrastructure remains. The original procedural release is preserved at `0cfe313`.
 
 ## Run locally
 
@@ -27,13 +29,19 @@ python3.12 -m venv .venv
 .venv/bin/python -m mit2009_studio.server
 ```
 
-Open **http://127.0.0.1:8773**. Keep the terminal running while rendering. The server binds only to this computer. A fresh installation does not need an API key, GPU, account, or paid service.
+Open **http://127.0.0.1:8773**. Keep the terminal running while rendering. The server binds only to this computer. The core app needs no API key or account. Ensemble generation additionally needs the free Apple Silicon setup below.
 
 Install FFmpeg with `brew install ffmpeg` on macOS or `sudo apt install ffmpeg` on Ubuntu/Debian. Check `ffmpeg -version` and `ffprobe -version` before starting. The build must include H.264/libx264 and ProRes encoders.
 
 On a Mac, after setup, double-click **Open 2.009 Studio.command**. The older Test Studio shortcut also opens the new application.
 
-Click **Try the sample project** or open a saved project, then **Find my melody**. The simple guide lets you check what the system heard. The three professional ensemble directions are not available as generated choices yet; no API request or charge occurs when preparing a guide.
+Click **Try the sample project** or open a saved project, then **Find my melody**. The simple guide lets you check what the system heard. On an Apple Silicon Mac, install the free local generator once:
+
+```sh
+.venv/bin/python scripts/install_local_music.py
+```
+
+Then click **Make three versions**, compare the three drafts, rate and select one. The setup downloads about 6.9 GB of model weights plus dependencies into ignored `data/`; each generation runs offline. Your audio remains on this Mac.
 
 ## Keep your work
 

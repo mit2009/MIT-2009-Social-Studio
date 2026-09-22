@@ -1,3 +1,15 @@
+# Free local ensemble milestone
+
+30 tests passed in 27.20 seconds on September 22, 2026. Ruff and JavaScript syntax checks passed. The two new ensemble tests exercise the real subprocess/file boundary with a clearly identified stand-in: exactly three choices, only the synthesized guide passed to the renderer, offline settings, guide integrity, zero API cost, unchanged originals, and no automatic creative decisions. Those tests run without model weights on CI and do not establish musical quality.
+
+A separate live run used the pinned Stable Audio 3 Medium model and official MLX runtime on Danny's Mac. All three drafts finished in 14.459 seconds total: bass-heavy dance 7.189 seconds, chamber trio 3.686 seconds, and jazz trio 3.560 seconds. This is one observed run, not promised latency. No account, paid request or recording upload was used.
+
+The three distinct exported WAVs were independently checked: 15 seconds, 48 kHz stereo, finite samples, peaks below clipping, audible signal in the first 100 ms, matching artifact hashes, and the accepted guide's hash in every render record. The original recording and normalized source hashes were unchanged. Private measurements and render logs remain under ignored `data/verification/local-ensembles/` and `data/candidate-engine/renders/`.
+
+The embedded browser displayed three ready cards with play/rating/download controls, retained the reference and melody players, and kept the retired experiments collapsed. Dance playback advanced without a media error; all three players loaded 15-second durations. Ratings and approval were left untouched. Musical fidelity, instrumental-only output, and convincing ensemble performance still need listening review; technical checks cannot prove them.
+
+---
+
 # Immediate playback update
 
 28 tests passed in 23.99 seconds on September 22. Added checks for soft opening notes, internal rests, unchanged originals/15-second masters, cached listening copies, byte-range playback and actual candidate preview endpoints. The melody API test now includes room noise before the phrase. Ruff and JavaScript syntax checks passed.
@@ -6,7 +18,7 @@ Danny's current reference preview skips 2.864 seconds; the melody preview skips 
 
 ---
 
-# Current music/Connect milestone
+# Earlier music/Connect preparation milestone
 
 25 tests passed in 20.77 seconds on September 22, including four new melody checks: recovery of a known eight-note phrase and timing, rejection of noise, synthesis from only notes/timing, and API persistence/caching with the old voice-effects route disabled. Code and JavaScript syntax checks passed. The existing 21 tests retain coverage of the earlier DSP and downstream media infrastructure; they do not establish professional orchestration quality.
 

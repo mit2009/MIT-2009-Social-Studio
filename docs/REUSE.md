@@ -21,3 +21,7 @@ librosa 1.0.0 (ISC) is now a pinned dependency used through its pYIN API for a n
 ## Media
 
 `demo.py` creates synthetic geometry and a simple procedural melody for a rights-clear practice workflow. It does not reproduce a commercial song or contain student photographs. Danny's provided recording and real course photographs used for verification stay under ignored private `data/` and were not added to Git. The existing MIT sound source notes are historical reference documentation; no external sound library is silently bundled or uploaded.
+
+## Free local music model
+
+The optional renderer calls the official Stable Audio 3 MLX runtime at pinned revision `779434a908193105335fd8d833418603625b2859`. Its source remains an independent ignored checkout under this project's `data/runtime/`, with upstream MIT license retained. Four NPZ weight files are downloaded from Stability AI's optimized-model repository at `da6edc54ddba10bfd79a077102ded687f80e882b` and verified against published SHA-256 hashes. Weight licensing is Stability AI Community License; T5Gemma has separate Gemma terms. No model weights or private audio enter Git. The optional environment is isolated and pinned in `requirements-audio.lock.txt`. See LOCAL-MUSIC.md for the scope and deployment caveat.

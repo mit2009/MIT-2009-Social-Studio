@@ -13,7 +13,7 @@ from .store import Store, now, packed, uid, unpack
 from .styles import choose_styles
 
 STAGES = ("audio", "video", "text", "assembly")
-VERSION = "0.3.0"
+VERSION = "0.4.0"
 CANDIDATES = """SELECT c.*, (SELECT stars FROM ratings r WHERE r.candidate_id=c.id ORDER BY r.id DESC LIMIT 1)
 AS rating FROM candidates c"""
 
@@ -216,7 +216,7 @@ class Studio:
                 Store.event(db, asset["project_id"], asset["user_id"], "melody_guide_prepared", guide)
             return guide
 
-    def enqueue(self, project_id, request):
+    def enqueue(self, project_id, request, *, ensemble=False):
         project = self.project(project_id)
         stage = request.stage
         selected = self.selections(project_id)
@@ -246,9 +246,26 @@ class Studio:
             raise ValueError("This stage uses earlier selected candidates, not new files.")
         if stage == "text" and not request.keyword:
             raise ValueError("Enter one Keyword.")
+        guide = None
+        if ensemble:
+            from .providers.ensemble import runtime
+
+            if stage != "audio" or len(assets) != 1 or assets[0]["role"] != "reference":
+                raise ValueError("Choose one musical phrase for the three ensembles.")
+            if not runtime():
+                raise ValueError("The free local music model needs its one-time setup on this Mac.")
+            guide = assets[0]["analysis"].get("melody_guide")
+            if not guide:
+                raise ValueError("Check your melody before making the three versions.")
+            if media.digest(self.store.path(guide["path"])) != guide["sha256"]:
+                raise ValueError("The melody guide changed. Prepare it again before continuing.")
         batch_id, job_id, seed = uid(), uid(), secrets.randbelow(2**31 - 4)
         styles = choose_styles(stage, seed)
-        if stage == "audio":
+        if ensemble:
+            from .providers.ensemble import STYLES
+
+            styles = STYLES
+        elif stage == "audio":
             styles.append(
                 {
                     "id": "original-mix",
@@ -294,6 +311,10 @@ class Studio:
                     "renderer_version": VERSION,
                     "presets_version": 1,
                 }
+                if ensemble:
+                    from .providers.ensemble import MODEL, PROVIDER
+
+                    settings.update(provider=PROVIDER, model=MODEL, melody_guide=guide)
                 db.execute(
                     "INSERT INTO candidates(id,project_id,batch_id,stage,slot,kind,settings,context,sources,created_at) VALUES(?,?,?,?,?,?,?,?,?,?)",
                     (

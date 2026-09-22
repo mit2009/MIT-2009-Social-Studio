@@ -1,3 +1,5 @@
+> September 22 update: Danny accepted the melody check and requires free generation. The paid API proposal below is superseded and must not be executed. The active approach is local Stable Audio 3 Medium; see LOCAL-MUSIC.md. No account or API key is needed for the local setup.
+
 # Your idea, played beautifully
 
 The product goal is to help people with little musical experience create music, recognize their contribution, and develop confidence in their musical ability. A person offers a phrase, hears it developed with musical intelligence, recognizes their own contribution, and feels ownership. The result must not be a generic good track with a disconnected source upload.
@@ -20,9 +22,9 @@ These are performance briefs, not just equalization settings or three instrument
 
 This guide is a technical handoff, not the promised orchestration. It is deliberately labeled as a melody check in the UI. It can misread octaves, miss quiet/rough notes, or fragment glides. Do not interpret its confidence as a person's musical ability. If the guide does not retain the idea, improve extraction or choose a better melody-conditioned path before generating a polished result from the wrong phrase.
 
-The test recording produced 31 estimated note events, with 38.1% of frames passing the conservative pitch-confidence gate. That is not a verified transcription. A known eight-note synthetic phrase was recovered correctly; noise was rejected. Danny still needs to recognize his phrase in the guide and, more importantly, in the final interpretation.
+The test recording produced 31 estimated note events, with 38.1% of frames passing the conservative pitch-confidence gate. That is not a verified transcription. A known eight-note synthetic phrase was recovered correctly; noise was rejected. The melody check was accepted as a development reference. Recognizable contribution and ensemble quality in the final interpretations still require listening evaluation.
 
-## First model experiment — pending authorization and access
+## Superseded paid proposal — retained only as research history
 
 Candidate: **Stable Audio 3.0 Large**, using audio-to-audio on the wordless guide. [Official guidance](https://stability.ai/guides/stable-audio-3-prompt-guide) describes instrument/style changes with a tradeoff between source preservation and transformation. It does not establish that our melody-to-ensemble task will succeed. [Pricing](https://platform.stability.ai/pricing) lists 26 credits per standard generation at $0.01 per credit: approximately $0.78 for three. Recheck endpoint/billing details before a live request.
 

@@ -4,7 +4,7 @@ Danny wants this to become a tool you can understand, challenge, improve, and po
 
 ## Latest direction, September 22
 
-Danny clarified that audio should make a self-identified non-musical person feel musical: their own phrase, thoughtfully developed by convincing instrumental ensembles. No intelligible sung words and no bed/effects buckets. Read ORCHESTRATION-TRIAL.md first. The current preview has Connect branding, one musical input and a local melody-check tool. The pro-level orchestration claim is explicitly unfulfilled pending a live model experiment. The earlier complete procedural prototype is at `0cfe313`; the descriptions below explain that foundation, not a claim that its DSP output meets the new brief.
+Danny clarified that audio should make a self-identified non-musical person feel musical: their own phrase, thoughtfully developed by convincing instrumental ensembles. No intelligible sung words and no bed/effects buckets. Read ORCHESTRATION-TRIAL.md first. The current preview has Connect branding, one musical input and a local melody-check tool. Danny accepted the melody check and requires the app to be free. Stable Audio 3 Medium now generates three local ensemble drafts on Apple Silicon; listen before concluding that the professional-quality goal is met. See LOCAL-MUSIC.md for the isolated setup. The earlier complete procedural prototype is at `0cfe313`; the descriptions below explain that foundation, not a claim that its DSP output meets the new brief.
 
 ## The product hypothesis
 
@@ -12,13 +12,13 @@ Three meaningfully different possibilities → a human compares and selects → 
 
 ## Try it first
 
-Follow the root README, click **Try the sample project**, and complete one 15-second story. No account/API key/GPU is needed. Practice images and melody are generated locally. Read `service.py` for the rules, `jobs.py` for work handling, and `render.py` / `providers/local.py` for media. Run the tests before changing them.
+Follow the root README, click **Try the sample project**, and complete one 15-second story. No account or API key is needed. The optional ensemble runtime uses the Apple Silicon GPU. Practice images and melody are generated locally. Read `service.py` for the rules, `jobs.py` for work handling, and `render.py` / `providers/ensemble.py` for media. Run the tests before changing them.
 
 ## What exists
 
-A functioning local four-stage workflow with persistent projects, files, three-option batches, Original Mix, ratings, saved winners, selections, provenance, transparent text, three final edits, explain-then-approve, and downloadable approved output/manifest. One SQLite database, one worker, one browser UI.
+A functioning local four-stage workflow with persistent projects, files, three-option batches, ratings, saved winners, selections, provenance, transparent text, three final edits, explain-then-approve, and downloadable approved output/manifest. One SQLite database, one worker, one browser UI.
 
-Generation is currently procedural. No cloud adapter is claimed to work. Source-aware music generation and genuinely stronger aesthetic alternatives remain open creative/engineering work. Local user identity is self-declared; this is not a student-ready hosted service.
+Audio generation uses a local melody-conditioned model; the visual stages remain procedural. No cloud adapter is claimed to work. Source-aware music generation and genuinely stronger aesthetic alternatives remain open creative/engineering work. Local user identity is self-declared; this is not a student-ready hosted service.
 
 ## Why this design
 

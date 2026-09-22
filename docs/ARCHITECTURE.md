@@ -1,6 +1,6 @@
-> Current audio revision: see ORCHESTRATION-TRIAL.md. The HTTP API pauses new voice-effects generation while the new ensemble provider is evaluated. `melody.py` and `Studio.prepare_melody` prepare and cache note-only guides. The lower-level legacy DSP renderer remains for regression coverage and old recipes; it does not implement the new quality target. New uploads accept only reference audio or photographs. Connect styling uses the existing brand assets.
-
 # Architecture and developer guide
+
+> Audio now uses `providers/ensemble.py`: a separate local MLX subprocess receives only the saved wordless guide. `melody.py` prepares the guide; the worker validates its snapshotted hash. The HTTP audio route always requests exactly three free ensemble drafts. Legacy DSP stays available only internally for regression coverage. See LOCAL-MUSIC.md for setup and model provenance.
 
 ## One application
 
@@ -47,7 +47,7 @@ flowchart LR
 
 `assets` holds role (reference/bed/effect/photo), original name, original and normalized file paths/hashes, analysis and contribution timestamp. Audio normalization uses the first 15 seconds and retains the full original. Photos use EXIF orientation, sRGB conversion when a profile is supplied, and a bounded working image.
 
-`batches` records one explicit generation request, project, stage, seed, author and time. Each batch creates three `candidates`. Audio also creates a separate `kind=original` record in slot 4; UI never labels it Option 4.
+`batches` records one explicit generation request, project, stage, seed, author and time. Each batch creates three `candidates`. Current audio requests create exactly three ensemble records. Only historical/internal legacy DSP batches include a fourth Original Mix record.
 
 Candidates store stage, status, the complete style/settings snapshot, source IDs, earlier selected candidate IDs (`context`), analysis, and hashed artifacts. Successful artifacts are never overwritten. `ratings` appends every 1–5 decision; current rating is the latest one. `winner_at` preserves the first five-star achievement even if the rating later changes. This policy is stated in the UI.
 

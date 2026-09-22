@@ -43,7 +43,7 @@ def test_guide_synthesis_accepts_only_notes_and_timing():
 
 
 @pytest.mark.media
-def test_melody_api_persists_guide_and_retires_voice_effects(tmp_path):
+def test_melody_api_persists_guide_and_retires_voice_effects(tmp_path, monkeypatch):
     source, _ = make_sources(tmp_path / "source")
     # Room noise before the phrase must not force a wait after melody detection.
     original = media.read_audio(source)
@@ -86,6 +86,7 @@ def test_melody_api_persists_guide_and_retires_voice_effects(tmp_path):
         detail = client.get(f"/api/projects/{p['id']}").json()
         assert detail["assets"][0]["analysis"]["melody_guide"] == saved
         assert detail["candidates"] == [] and detail["approvals"] == []
+        monkeypatch.setattr("mit2009_studio.server.runtime", lambda: None)
         assert (
             client.post(
                 f"/api/projects/{p['id']}/generate",

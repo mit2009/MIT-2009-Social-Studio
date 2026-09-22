@@ -1,6 +1,6 @@
 # 2.009 content pipeline playbook
 
-Status: revised musical-authorship direction. The earlier procedural four-stage prototype is preserved in Git. The current preview prepares a note-only melody guide and shows three ensemble directions; professional orchestration awaits a bounded live model test. See ORCHESTRATION-TRIAL.md.
+Status: free local musical-authorship prototype. A note-only melody guide conditions three Stable Audio 3 Medium ensemble drafts on the Mac. Professional-quality success still requires listening; the earlier procedural prototype remains in Git. See ORCHESTRATION-TRIAL.md.
 
 ## Purpose
 
@@ -19,6 +19,8 @@ One personal musical phrase; 1–10 photographs; exactly one Keyword. No sound-b
 Audio → Video → Text → Assembly. Generate 3 → Compare → Rate → Select → Advance. Choose one final mix → Why this one? → Approve → Export. Duration is a project setting fixed to 15 seconds in V1, with no duration control.
 
 ## Audio
+
+The workflow must be free: no paid generation services, subscriptions, API credits, or automatic cloud fallback. Use the installed local model. Keep the accepted melody check in the flow.
 
 Help a self-identified non-musical person hear that they have a musical idea. One phrase is interpreted by three convincing instrumental ensembles. Retain recognizable melodic contribution, not sung words or the recorded voice. Use expressive phrasing, responsive parts, harmony and an intentional arc. No fourth Original Mix option; the original remains a listening reference. A simple synthesized guide is preparation, never the professional-performance claim. Human listening must assess both quality and recognizable contribution.
 
@@ -68,7 +70,7 @@ A clean GitHub repository Talla can clone, install and run using verified instru
 
 ## Known problems
 
-Learned-provider output quality, reference fidelity, cost and latency have not been live-tested. The app has no authentication, student permissions, moderation, quotas, deletion UI or hosted infrastructure. Heuristic onsets are not verified beats; simple image measurements do not identify subjects. Font coverage is limited. See LIMITATIONS.md for the full list. Technical output checks do not establish artistic quality; Danny still needs to listen and choose.
+Ensemble output quality and melodic fidelity require human listening. Free local generation has no per-call API cost; hardware/storage remain local. The app has no authentication, student permissions, moderation, quotas, deletion UI or hosted infrastructure. Heuristic onsets are not verified beats; simple image measurements do not identify subjects. Font coverage is limited. See LIMITATIONS.md for the full list. Technical output checks do not establish artistic quality; Danny still needs to listen and choose.
 
 ## Future ideas
 

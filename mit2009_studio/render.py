@@ -11,6 +11,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageOps
 from . import media
 from .analysis import audio_features, image_features
 from .providers import AudioRequest
+from .providers.ensemble import PROVIDER, LocalEnsembleProvider
 from .providers.local import LocalAudioProvider
 
 FONT = Path(__file__).parent / "web/brand-2026/Outfit-Bold.ttf"
@@ -30,7 +31,9 @@ def rhythm_times(audio_analysis, duration, minimum=0.75):
 def render_audio(settings, sources, context, folder, size, progress):
     by_role = {a["role"]: a for a in sources}
     request = AudioRequest(
-        reference=by_role["reference"]["file"],
+        reference=by_role["reference"]["guide_file"]
+        if settings["provider"] == PROVIDER
+        else by_role["reference"]["file"],
         bed=by_role.get("bed", {}).get("file"),
         effect=by_role.get("effect", {}).get("file"),
         style=settings["style"],
@@ -42,7 +45,8 @@ def render_audio(settings, sources, context, folder, size, progress):
         if settings["style"]["mode"] != "original"
         else "Preserving your original recording"
     )
-    result = LocalAudioProvider().generate(request, folder)
+    provider = LocalEnsembleProvider() if settings["provider"] == PROVIDER else LocalAudioProvider()
+    result = provider.generate(request, folder)
     info = audio_features(result.output, settings["duration"])
     info["process"] = result.metadata
     return {"output": result.output, "preview": result.output}, info

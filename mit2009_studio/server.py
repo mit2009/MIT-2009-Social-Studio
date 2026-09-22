@@ -15,6 +15,7 @@ from fastapi.staticfiles import StaticFiles
 from . import media
 from .jobs import Worker
 from .models import Approval, Generate, NewProject, Rating
+from .providers.ensemble import PROVIDER, runtime
 from .service import VERSION, Studio
 from .styles import load_presets
 
@@ -82,8 +83,9 @@ def create_app(data_dir=None, start_worker=True, size_override=None):
         return {
             "version": VERSION,
             "duration": 15,
-            "provider": "orchestration-pending",
-            "generation": "local melody preparation; ensemble model evaluation pending",
+            "provider": PROVIDER,
+            "local_music_ready": runtime() is not None,
+            "generation": "free local melody-conditioned ensemble drafts",
             "presets": load_presets(),
             "data_dir": str(studio.store.root),
         }
@@ -142,12 +144,9 @@ def create_app(data_dir=None, start_worker=True, size_override=None):
 
     @app.post("/api/projects/{project_id}/generate", status_code=202)
     def generate(project_id: str, request: Generate):
-        if request.stage == "audio":
-            raise HTTPException(
-                409,
-                "Ensemble orchestration is being evaluated. Check your melody first; the earlier voice-effects generator has been retired.",
-            )
-        return studio.enqueue(project_id, request)
+        if request.stage == "audio" and runtime() is None:
+            raise HTTPException(409, "The free local music model needs its one-time setup on this Mac.")
+        return studio.enqueue(project_id, request, ensemble=request.stage == "audio")
 
     @app.post("/api/candidates/{candidate_id}/rating")
     def rate(candidate_id: str, request: Rating):
@@ -160,9 +159,10 @@ def create_app(data_dir=None, start_worker=True, size_override=None):
     @app.post("/api/jobs/{job_id}/retry", status_code=202)
     def retry(job_id: str):
         batch = studio.store.one(
-            "SELECT b.stage FROM batches b JOIN jobs j ON j.batch_id=b.id WHERE j.id=?", (job_id,)
+            "SELECT b.stage,b.id FROM batches b JOIN jobs j ON j.batch_id=b.id WHERE j.id=?", (job_id,)
         )
-        if batch["stage"] == "audio":
+        candidates = studio.store.all("SELECT settings FROM candidates WHERE batch_id=?", (batch["id"],))
+        if batch["stage"] == "audio" and any(c["settings"]["provider"] != PROVIDER for c in candidates):
             raise HTTPException(
                 409,
                 "The earlier voice-effects generator has been retired. Prepare a melody guide for the new orchestration test.",

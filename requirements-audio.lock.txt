@@ -1,0 +1,5 @@
+# Optional Apple Silicon inference only; separate from the studio server environment.
+mlx==0.32.2
+mlx-metal==0.32.2
+numpy==2.5.3
+sentencepiece==0.2.2

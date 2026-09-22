@@ -1,15 +1,15 @@
-> Current milestone: professional ensemble generation is **not implemented or live-tested**. The user can prepare a local, wordless melody guide; the guide is not an orchestration. Audio generation in the previous prototype is retired from the UI/API. The older DSP/Original Mix limitations below describe that preserved prototype. See ORCHESTRATION-TRIAL.md for the revised brief and gates.
-
 # Known limitations and next steps
+
+> Free local ensemble drafts are now implemented for Apple Silicon. Professional ensemble quality and recognizable melodic authorship remain listening criteria, not proven by passing software tests. The older DSP recipes remain for history/regression only.
 
 ## Deliberately unfinished
 
-- Local DSP and procedural animation; no integrated/live-tested learned generation model. Sound may be interesting, odd, or musically poor. Listening judgment remains necessary.
+- Local Stable Audio 3 Medium can change the melody or generate unwanted vocal-like material. Listen to every draft; no automatic quality or voice-free guarantee. A 6.9 GB one-time model download and Apple Silicon runtime are required.
 - One local declared author per project; no verified identity, separate per-action collaborators, access control or tamper-proof audit log. Anyone using this local instance can access its projects.
 - Nine audio recipes, three visual families, three text families and three assembly recipes. Style files are editable, but new algorithms need implementation. No conversational refinement/prompt editor. Another batch is a fresh explicit generation request.
 - Original Mix uses the first 15 seconds. Long recordings are cropped to that excerpt, short ones padded with silence. The complete original remains saved. No trim-point picker yet.
 - The three assembly variants preserve selected files and change compositing, crop, title delay/scale/position and audio fades. They do not yet rebuild video cut timing from original photographs.
-- Audio analysis is RMS/onset heuristics. Tempo may be unknown or wrong; there is no melody transcription, source separation or harmonic matching. Procedural beds can clash with a melody. Text placement does not recognize faces/subjects.
+- Audio analysis is RMS/onset heuristics. Tempo may be unknown or wrong; the pYIN melody estimate can be wrong. No source separation or verified harmonic matching is claimed. Text placement does not recognize faces/subjects.
 - Center cropping can exclude a subject. Bold deformation can be unflattering. Review actual outputs. No face-aware framing, captioning or accessible transcript export yet.
 - Font coverage is limited to bundled Outfit; unsupported scripts/emoji may render as missing glyphs. The Keyword validator does not promise support for every writing system.
 - ProRes alpha can use substantial disk space. No storage quota, retention UI, trash, garbage collection or project deletion yet. Back up the entire private data folder with the server stopped.
