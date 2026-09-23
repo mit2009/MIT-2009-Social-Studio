@@ -1,0 +1,264 @@
+{
+  "status": "proposed_not_executed",
+  "last_updated": "2026-09-22",
+  "requires_review_before_audio_implementation": true,
+  "common": {
+    "project": {
+      "duration_seconds": 15.0,
+      "sample_rate": 48000,
+      "channels": 2
+    },
+    "seeds": [
+      2009,
+      2010
+    ],
+    "api_calls_allowed_during_generation": false,
+    "raw_vocal_audio_in_outputs_default": false,
+    "loudness_target_lufs": -18,
+    "true_peak_target_dbtp": -1,
+    "human_ratings": null
+  },
+  "first_audition": {
+    "experiments": [
+      "E01",
+      "E02",
+      "E04"
+    ],
+    "candidate_count": 6,
+    "source": "existing accepted melody score",
+    "renderer": "existing renderer with identical lead patch across methods",
+    "new_model_required": false,
+    "application_changes": false
+  },
+  "experiments": [
+    {
+      "id": "E01",
+      "name": "Faithful player",
+      "inputs": [
+        "accepted_notes"
+      ],
+      "preservation": "exact_pitches_order_relative_onsets",
+      "parameters": {
+        "phrase_accent_velocity": 6,
+        "velocity_jitter_max": 4
+      }
+    },
+    {
+      "id": "E02",
+      "name": "Groove translator",
+      "inputs": [
+        "accepted_notes"
+      ],
+      "preservation": "pitches_order_with_logged_time_warp",
+      "parameters": {
+        "first_bpm": 120,
+        "grid_beats": 0.5,
+        "quantization_strength": 0.5,
+        "swing_by_seed": {
+          "2009": 0.5,
+          "2010": 0.6
+        },
+        "minimum_onset_gap_seconds": 0.03,
+        "later_bpm_grid": [
+          100,
+          120,
+          140
+        ]
+      }
+    },
+    {
+      "id": "E03",
+      "name": "Reharmonizing trio",
+      "inputs": [
+        "accepted_notes",
+        "optional_key_hypotheses"
+      ],
+      "preservation": "exact_lead",
+      "parameters": {
+        "window_seconds": 2,
+        "top_paths": 3,
+        "melody_compatibility_weight": 1.0,
+        "common_tone_reward": 0.25,
+        "bass_motion_cost_per_semitone": 0.1
+      }
+    },
+    {
+      "id": "E04",
+      "name": "Motif improviser",
+      "inputs": [
+        "accepted_notes"
+      ],
+      "preservation": "literal_motif_plus_development",
+      "parameters": {
+        "motif_notes": 3,
+        "form_seconds": [
+          0,
+          4,
+          9,
+          13,
+          15
+        ],
+        "transform_by_seed": {
+          "2009": "repeat_and_sequence",
+          "2010": "inversion_then_return"
+        },
+        "neural_comparator": "Notochord, separately gated checkpoint"
+      }
+    },
+    {
+      "id": "E05",
+      "name": "Tap-to-band drummer",
+      "inputs": [
+        "onsets",
+        "onset_energy"
+      ],
+      "preservation": "rhythmic_lineage",
+      "parameters": {
+        "onset_min_gap_seconds": 0.05,
+        "max_tempo_hypotheses": 3,
+        "answer_patterns": [
+          "3_of_8",
+          "5_of_8"
+        ]
+      }
+    },
+    {
+      "id": "E06",
+      "name": "Phrase memory player",
+      "inputs": [
+        "labeled_fragments"
+      ],
+      "preservation": "fragment_lineage",
+      "parameters": {
+        "fragment_notes": [
+          2,
+          5
+        ],
+        "maximum_immediate_repeats": 2,
+        "engine": "Dicy2 Python"
+      }
+    },
+    {
+      "id": "E07",
+      "name": "Granular sculptor",
+      "inputs": [
+        "voice_free_guide_or_nonvocal_audio"
+      ],
+      "preservation": "source_slice_map",
+      "parameters": {
+        "grain_ms": [
+          40,
+          80,
+          120
+        ],
+        "density_per_second": [
+          10,
+          25
+        ],
+        "maximum_concurrent_grains": 32,
+        "tail_seconds": 0.5
+      }
+    },
+    {
+      "id": "E08",
+      "name": "Mosaic orchestrator",
+      "inputs": [
+        "target_audio",
+        "cleared_corpus"
+      ],
+      "preservation": "target_and_sample_lineage",
+      "parameters": {
+        "segment_min_seconds": 0.06,
+        "nearest_candidates": [
+          3,
+          5
+        ],
+        "fade_seconds": 0.01,
+        "maximum_layers": 2,
+        "engine": "FluCoMa"
+      }
+    },
+    {
+      "id": "E09",
+      "name": "Physical instrument builder",
+      "inputs": [
+        "pitch",
+        "onsets",
+        "loudness"
+      ],
+      "preservation": "control_curve_lineage",
+      "parameters": {
+        "materials": [
+          "wooden_pluck",
+          "metallic_resonance",
+          "soft_resonator"
+        ],
+        "engines": [
+          "Faust",
+          "Csound"
+        ]
+      }
+    },
+    {
+      "id": "E10",
+      "name": "Timbre shape-shifter",
+      "inputs": [
+        "f0",
+        "loudness",
+        "guide_or_nonvocal_audio"
+      ],
+      "preservation": "continuous_expression_or_latent_gesture",
+      "parameters": {
+        "first_engine": "DDSP",
+        "conditional_alternatives": [
+          "RAVE",
+          "AFTER"
+        ],
+        "training": false
+      }
+    },
+    {
+      "id": "E11",
+      "name": "MIDI-following neural band",
+      "inputs": [
+        "canonical_note_events"
+      ],
+      "preservation": "MIDI_conditioning_measure_fidelity",
+      "parameters": {
+        "model": "mrt2_small",
+        "frame_rate": 25,
+        "frame_count_for_v1": 375,
+        "mode": "note_conditioning_not_style_embedding_only",
+        "conditioning_comparison": [
+          "strict",
+          "partially_masked"
+        ]
+      }
+    },
+    {
+      "id": "E12",
+      "name": "Free cover artist",
+      "inputs": [
+        "voice_free_E01_render"
+      ],
+      "preservation": "source_audio_conditioning_measure_recognition",
+      "parameters": {
+        "engine": "ACE-Step 1.5",
+        "mode": "source_cover",
+        "proposed_strengths_if_supported": [
+          0.4,
+          0.7,
+          0.9
+        ],
+        "instrumental": true
+      }
+    }
+  ],
+  "not_yet_resolved": [
+    "Chosen dependency lockfiles",
+    "Exact pretrained checkpoint revisions and hashes for neural experiments",
+    "Benchmark latency and memory",
+    "Listening outcomes",
+    "Final application open-source license after component selection"
+  ]
+}

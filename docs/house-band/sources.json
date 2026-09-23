@@ -1,0 +1,2243 @@
+{
+  "checked_at": "2026-09-22",
+  "method": "GitHub public repository metadata, latest default-branch commit, README and license endpoints; primary documentation review",
+  "repositories": [
+    {
+      "full_name": "billyblu2000/AccoMontage2",
+      "html_url": "https://github.com/billyblu2000/AccoMontage2",
+      "description": "Chord and accompaniment generator, pure python package that generate chord progression and accompaniment according to given melodies. Code for paper AccoMontage2: A Complete Harmonization and Accompaniment Arrangement System.",
+      "default_branch": "master",
+      "pushed_at": "2023-05-03T13:46:59Z",
+      "updated_at": "2026-09-17T02:51:54Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "homepage": "https://billyyi.top/accomontage2",
+      "checked_at": "2026-09-22",
+      "head_sha": "39184ae5cd8be1de289d116d12b69892a034f1b6",
+      "head_date": "2023-05-03T13:46:56Z",
+      "readme": {
+        "path": "docs/README.md",
+        "html_url": "https://github.com/billyblu2000/AccoMontage2/blob/master/docs/README.md",
+        "sha": "9d506e8af8a3587f0488b9fabbfe13a101570b7f",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/billyblu2000/AccoMontage2/blob/master/LICENSE",
+        "sha": "be223d7536e616f05f35a36b2ba86df329056122",
+        "error": null
+      }
+    },
+    {
+      "full_name": "microsoft/muzic",
+      "html_url": "https://github.com/microsoft/muzic",
+      "description": "Muzic: Music Understanding and Generation with Artificial Intelligence",
+      "default_branch": "main",
+      "pushed_at": "2026-08-05T21:14:33Z",
+      "updated_at": "2026-09-22T06:07:30Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "homepage": "",
+      "checked_at": "2026-09-22",
+      "head_sha": "2b8739671ba06f819f31f568b8a79da581aaf6f9",
+      "head_date": "2026-08-05T21:14:32Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/microsoft/muzic/blob/main/README.md",
+        "sha": "b15d5c62681cd7fa91cf96bc90e1c55b4b9fbd1f",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/microsoft/muzic/blob/main/LICENSE",
+        "sha": "9e841e7a26e4eb057b24511e7b92d42b257a80e5",
+        "error": null
+      }
+    },
+    {
+      "full_name": "SonyCSLParis/pesto",
+      "html_url": "https://github.com/SonyCSLParis/pesto",
+      "description": "Self-supervised learning for real-time pitch estimation",
+      "default_branch": "master",
+      "pushed_at": "2025-10-15T11:01:00Z",
+      "updated_at": "2026-09-10T14:57:45Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "lgpl-3.0",
+        "name": "GNU Lesser General Public License v3.0",
+        "spdx_id": "LGPL-3.0",
+        "url": "https://api.github.com/licenses/lgpl-3.0",
+        "node_id": "MDc6TGljZW5zZTEy"
+      },
+      "homepage": "",
+      "checked_at": "2026-09-22",
+      "head_sha": "62bc0c9702558f19af4593752947fb9db1eadac9",
+      "head_date": "2025-10-15T11:01:00Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/SonyCSLParis/pesto/blob/master/README.md",
+        "sha": "5293fe16d0db1bcbb103c4d3932c76c95fa34f3b",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE.md",
+        "html_url": "https://github.com/SonyCSLParis/pesto/blob/master/LICENSE.md",
+        "sha": "eac7dadc24e8b7fcbff4e85d77e29d70da43ec00",
+        "error": null
+      }
+    },
+    {
+      "full_name": "muscriptor/muscriptor",
+      "html_url": "https://github.com/muscriptor/muscriptor",
+      "description": "A multi-instrument music transcription model developed by Kyutai and Mirelo.",
+      "default_branch": "main",
+      "pushed_at": "2026-09-04T09:19:54Z",
+      "updated_at": "2026-09-22T19:32:27Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "homepage": "",
+      "checked_at": "2026-09-22",
+      "head_sha": "7f213afecf23bd6a1b8672aa223690ee9807cefb",
+      "head_date": "2026-09-04T09:17:44Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/muscriptor/muscriptor/blob/main/README.md",
+        "sha": "cb5fdc580ecc6af8aa109ee59caef1c5d9633563",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/muscriptor/muscriptor/blob/main/LICENSE",
+        "sha": "32d9000511cd327a501c6527338cb9c7f57f9a2e",
+        "error": null
+      }
+    },
+    {
+      "full_name": "DYCI2/Dicy2-python",
+      "html_url": "https://github.com/DYCI2/Dicy2-python",
+      "description": "This repository provides the generative core of \"Dicy2 for Max\" and \"Dicy2 for Live\" as a Python library. The Dicy2 Python library defines the core models and tools for the interactive generation of symbolic musical sequences and implements several models, generative heuristics, time management strategies, and architectures of interactive agents.",
+      "default_branch": "master",
+      "pushed_at": "2025-05-09T14:43:15Z",
+      "updated_at": "2026-05-10T19:54:12Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "homepage": "",
+      "checked_at": "2026-09-22",
+      "head_sha": "ec139cdef2c41d859aa4be28d671d7057655fcd1",
+      "head_date": "2025-05-09T14:43:15Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/DYCI2/Dicy2-python/blob/master/README.md",
+        "sha": "aea4b04e174518ca0e53fa4826cba539bf6634f1",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/DYCI2/Dicy2-python/blob/master/LICENSE",
+        "sha": "94a9ed024d3859793618152ea559a168bbcbb5e2",
+        "error": null
+      }
+    },
+    {
+      "full_name": "DYCI2/Dicy2",
+      "html_url": "https://github.com/DYCI2/Dicy2",
+      "description": "\"Dicy2 for Max\" is a Max package implementing interactive agents using machine-learning to generate musical sequences that can be integrated into musical situations ranging from the production of structured material within a compositional process to the design of autonomous agents for improvised interaction. Check also our plugin for Ableton live !",
+      "default_branch": "master",
+      "pushed_at": "2025-05-09T14:27:36Z",
+      "updated_at": "2026-09-20T10:14:22Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "homepage": "https://forum.ircam.fr/projects/detail/dicy2/",
+      "checked_at": "2026-09-22",
+      "head_sha": "3c357e4f2796c999f0e0abe8c3b2c3ce0700b3f2",
+      "head_date": "2025-05-09T14:27:35Z",
+      "readme": {
+        "path": "readme.md",
+        "html_url": "https://github.com/DYCI2/Dicy2/blob/master/readme.md",
+        "sha": "26956af1596a847b5ca5f502e36cb5c37c0b8d89",
+        "error": null
+      },
+      "license_file": {
+        "path": null,
+        "html_url": null,
+        "sha": null,
+        "error": "gh: Not Found (HTTP 404)\n"
+      }
+    },
+    {
+      "full_name": "acids-ircam/AFTER",
+      "html_url": "https://github.com/acids-ircam/AFTER",
+      "description": "AFTER : Audio Features Transfer and Exploration in Real-time",
+      "default_branch": "main",
+      "pushed_at": "2026-07-29T11:38:19Z",
+      "updated_at": "2026-09-18T07:11:19Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "homepage": null,
+      "checked_at": "2026-09-22",
+      "head_sha": "60ced7671b229f2164a7a0e6a1d9b5971e9b6ccb",
+      "head_date": "2026-07-29T11:37:36Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/acids-ircam/AFTER/blob/main/README.md",
+        "sha": "03e14157805dd7686d06b1fd71b2332504f519c9",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE.md",
+        "html_url": "https://github.com/acids-ircam/AFTER/blob/main/LICENSE.md",
+        "sha": "d42a5530e68bf1f652453ec7c4b9bb1a32e12ad9",
+        "error": null
+      }
+    },
+    {
+      "full_name": "pure-data/pure-data",
+      "html_url": "https://github.com/pure-data/pure-data",
+      "description": "Pure Data -  a free real-time computer music system",
+      "default_branch": "master",
+      "pushed_at": "2026-09-22T13:12:08Z",
+      "updated_at": "2026-09-22T07:31:33Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "homepage": "",
+      "checked_at": "2026-09-22",
+      "head_sha": "5ba779f36411d530ff6dbd7b29ac75a31534e51e",
+      "head_date": "2026-09-22T07:31:18Z",
+      "readme": {
+        "path": "README.txt",
+        "html_url": "https://github.com/pure-data/pure-data/blob/master/README.txt",
+        "sha": "bed44c2f03e112a5a737f1ac4dd7dda664e8c7ef",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE.txt",
+        "html_url": "https://github.com/pure-data/pure-data/blob/master/LICENSE.txt",
+        "sha": "a56a51eb52d9cccdb7ab74e8f7ce6c037cdad42c",
+        "error": null
+      }
+    },
+    {
+      "full_name": "plugdata-team/plugdata",
+      "html_url": "https://github.com/plugdata-team/plugdata",
+      "description": "Pure Data as a plugin, with a new GUI",
+      "default_branch": "develop",
+      "pushed_at": "2026-09-22T15:49:14Z",
+      "updated_at": "2026-09-22T15:49:18Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "homepage": "https://plugdata.org",
+      "checked_at": "2026-09-22",
+      "head_sha": "85c64c33ea293d77863127321a9bfae2e327816a",
+      "head_date": "2026-09-22T15:49:09Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/plugdata-team/plugdata/blob/develop/README.md",
+        "sha": "0ceffdf64a2a6c9148d1daf3649124686fec9f56",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/plugdata-team/plugdata/blob/develop/LICENSE",
+        "sha": "94a9ed024d3859793618152ea559a168bbcbb5e2",
+        "error": null
+      }
+    },
+    {
+      "full_name": "DamRsn/NeuralNote",
+      "html_url": "https://github.com/DamRsn/NeuralNote",
+      "description": "Audio Plugin for Audio to MIDI transcription using deep learning.",
+      "default_branch": "master",
+      "pushed_at": "2026-09-16T10:05:27Z",
+      "updated_at": "2026-09-22T20:52:53Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "homepage": "",
+      "checked_at": "2026-09-22",
+      "head_sha": "20ca45ad7b4429dea05a9321020b62bf2ff32fae",
+      "head_date": "2026-09-16T10:05:16Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/DamRsn/NeuralNote/blob/master/README.md",
+        "sha": "06f029a258dc1e149c5665416de62915c169fa79",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/DamRsn/NeuralNote/blob/master/LICENSE",
+        "sha": "43c7fc71d747115acbfc28d1983ead68cb6c473a",
+        "error": null
+      }
+    },
+    {
+      "full_name": "salu133445/muspy",
+      "html_url": "https://github.com/salu133445/muspy",
+      "description": "A toolkit for symbolic music generation",
+      "default_branch": "main",
+      "pushed_at": "2026-03-11T03:42:04Z",
+      "updated_at": "2026-09-15T04:46:46Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "homepage": "https://salu133445.github.io/muspy/",
+      "checked_at": "2026-09-22",
+      "head_sha": "2e1dc660dde6974c1693147f528d7437019d9580",
+      "head_date": "2024-01-25T09:40:12Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/salu133445/muspy/blob/main/README.md",
+        "sha": "93249a210eea2b5b5919d63030539ac082ce2021",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/salu133445/muspy/blob/main/LICENSE",
+        "sha": "06fab5f96a0c379f6eaf4af14e28c46bb5add1c3",
+        "error": null
+      }
+    },
+    {
+      "full_name": "essej/paulxstretch",
+      "html_url": "https://github.com/essej/paulxstretch",
+      "description": "PaulXStretch - Extreme Timestretching application and plugin",
+      "default_branch": "main",
+      "pushed_at": "2022-11-28T22:01:53Z",
+      "updated_at": "2026-09-21T19:09:01Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "homepage": null,
+      "checked_at": "2026-09-22",
+      "head_sha": "b6175e904a445809b45b3a5ee8e18501055cd2ef",
+      "head_date": "2022-10-02T18:38:36Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/essej/paulxstretch/blob/main/README.md",
+        "sha": "dc52f3a68464dc5d837502d1f11ab2b238c9a37c",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/essej/paulxstretch/blob/main/LICENSE",
+        "sha": "0dd3827e61b100625a4b5552d6f862fed1e31ff1",
+        "error": null
+      }
+    },
+    {
+      "full_name": "magenta/ddsp-vst",
+      "html_url": "https://github.com/magenta/ddsp-vst",
+      "description": "Realtime DDSP Neural Synthesizer and Effect ",
+      "default_branch": "main",
+      "pushed_at": "2023-08-07T08:19:05Z",
+      "updated_at": "2026-09-18T11:31:49Z",
+      "archived": true,
+      "disabled": false,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "homepage": null,
+      "checked_at": "2026-09-22",
+      "head_sha": "f2996e97f9469f3956a6b8e9d2d9b50b6555e1e9",
+      "head_date": "2023-05-19T03:45:31Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/magenta/ddsp-vst/blob/main/README.md",
+        "sha": "33e47942b618a563fcef8a445334dda96b4de6ba",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/magenta/ddsp-vst/blob/main/LICENSE",
+        "sha": "ddb5a3f64034b14cd7b48a466677da4d30c6df95",
+        "error": null
+      }
+    },
+    {
+      "full_name": "timsainb/noisereduce",
+      "html_url": "https://github.com/timsainb/noisereduce",
+      "description": "Noise reduction in python using spectral gating (speech, bioacoustics, audio, time-domain signals)",
+      "default_branch": "master",
+      "pushed_at": "2025-08-19T04:41:53Z",
+      "updated_at": "2026-09-22T17:44:57Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "homepage": "",
+      "checked_at": "2026-09-22",
+      "head_sha": "51c85343d6fe7695f7641f96b6a8f9e7e66be59b",
+      "head_date": "2024-10-06T13:38:18Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/timsainb/noisereduce/blob/master/README.md",
+        "sha": "64dd4ef63ec28a089bf79e5a45883d9a9b15338a",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/timsainb/noisereduce/blob/master/LICENSE",
+        "sha": "f3d669b9f77da82b0a64c42ce9e4e8b8a0578713",
+        "error": null
+      }
+    },
+    {
+      "full_name": "xiph/rnnoise",
+      "html_url": "https://github.com/xiph/rnnoise",
+      "description": "Recurrent neural network for audio noise reduction",
+      "default_branch": "main",
+      "pushed_at": "2025-02-22T23:58:31Z",
+      "updated_at": "2026-09-22T16:01:04Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "homepage": "",
+      "checked_at": "2026-09-22",
+      "head_sha": "70f1d256acd4b34a572f999a05c87bf00b67730d",
+      "head_date": "2025-02-22T23:58:18Z",
+      "readme": {
+        "path": "README",
+        "html_url": "https://github.com/xiph/rnnoise/blob/main/README",
+        "sha": "b8b2c461c38856525cb85262104f9788461e4a17",
+        "error": null
+      },
+      "license_file": {
+        "path": "COPYING",
+        "html_url": "https://github.com/xiph/rnnoise/blob/main/COPYING",
+        "sha": "59d7d09c80c17e60a972bf730caf6a3e005b17b1",
+        "error": null
+      }
+    },
+    {
+      "full_name": "Rikorose/DeepFilterNet",
+      "html_url": "https://github.com/Rikorose/DeepFilterNet",
+      "description": "Noise supression using deep filtering",
+      "default_branch": "main",
+      "pushed_at": "2024-10-17T08:35:11Z",
+      "updated_at": "2026-09-22T22:37:55Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "homepage": "https://huggingface.co/spaces/hshr/DeepFilterNet2",
+      "checked_at": "2026-09-22",
+      "head_sha": "d375b2d8309e0935d165700c91da9de862a99c31",
+      "head_date": "2024-10-17T08:35:10Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/Rikorose/DeepFilterNet/blob/main/README.md",
+        "sha": "148e9dfb41bb3b527d69769278701a968639f190",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/Rikorose/DeepFilterNet/blob/main/LICENSE",
+        "sha": "09250ca89f273c2eae410e7e7756c9ff7589ca02",
+        "error": null
+      }
+    },
+    {
+      "full_name": "facebookresearch/demucs",
+      "html_url": "https://github.com/facebookresearch/demucs",
+      "description": "Code for the paper Hybrid Spectrogram and Waveform Source Separation",
+      "default_branch": "main",
+      "pushed_at": "2024-04-24T20:25:19Z",
+      "updated_at": "2026-09-21T07:29:31Z",
+      "archived": true,
+      "disabled": false,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "homepage": "",
+      "checked_at": "2026-09-22",
+      "head_sha": "e976d93ecc3865e5757426930257e200846a520a",
+      "head_date": "2023-11-16T12:32:35Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/facebookresearch/demucs/blob/main/README.md",
+        "sha": "fe7e77b992b7918eba9491119d313abf5bc3eff1",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/facebookresearch/demucs/blob/main/LICENSE",
+        "sha": "a45a376fb0fcd4a3de06b6c096e62028929a2dcb",
+        "error": null
+      }
+    },
+    {
+      "full_name": "adefossez/demucs",
+      "html_url": "https://github.com/adefossez/demucs",
+      "description": "Code for the paper Hybrid Spectrogram and Waveform Source Separation",
+      "default_branch": "main",
+      "pushed_at": "2026-08-31T20:20:01Z",
+      "updated_at": "2026-09-23T00:31:19Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "homepage": "",
+      "checked_at": "2026-09-22",
+      "head_sha": "2883f3db65617d6d178c6ed10d869dc14e44e59b",
+      "head_date": "2026-08-31T20:19:58Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/adefossez/demucs/blob/main/README.md",
+        "sha": "2a7c120d26775c72bd7577fe3c1fdc8efa6fc22a",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/adefossez/demucs/blob/main/LICENSE",
+        "sha": "a45a376fb0fcd4a3de06b6c096e62028929a2dcb",
+        "error": null
+      }
+    },
+    {
+      "full_name": "nomadkaraoke/python-audio-separator",
+      "html_url": "https://github.com/nomadkaraoke/python-audio-separator",
+      "description": "Easy to use stem (e.g. instrumental/vocals) separation from CLI or as a python package, using a variety of amazing pre-trained models (primarily from UVR)",
+      "default_branch": "main",
+      "pushed_at": "2026-08-27T03:06:41Z",
+      "updated_at": "2026-09-22T17:26:58Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "homepage": "",
+      "checked_at": "2026-09-22",
+      "head_sha": "bf1164aa0f1ee1d1d0ef0f09b315f7659fc06bab",
+      "head_date": "2026-08-27T02:45:52Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/nomadkaraoke/python-audio-separator/blob/main/README.md",
+        "sha": "8b6c73d3168243179b14c0f4980940da9d0e9546",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/nomadkaraoke/python-audio-separator/blob/main/LICENSE",
+        "sha": "47f04d39e8804def1c9afe7ae594eebec92d3e05",
+        "error": null
+      }
+    },
+    {
+      "full_name": "librosa/librosa",
+      "html_url": "https://github.com/librosa/librosa",
+      "description": "Python library for audio and music analysis",
+      "default_branch": "main",
+      "pushed_at": "2026-09-21T17:47:07Z",
+      "updated_at": "2026-09-22T06:29:39Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "isc",
+        "name": "ISC License",
+        "spdx_id": "ISC",
+        "url": "https://api.github.com/licenses/isc",
+        "node_id": "MDc6TGljZW5zZTEw"
+      },
+      "homepage": "https://librosa.org/",
+      "checked_at": "2026-09-22",
+      "head_sha": "c6968062a931d39d5d923597c92459c2c32c6b49",
+      "head_date": "2026-09-21T17:46:28Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/librosa/librosa/blob/main/README.md",
+        "sha": "8bb350a2f89beb4ab3294c36e0aff6bb88d89182",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE.md",
+        "html_url": "https://github.com/librosa/librosa/blob/main/LICENSE.md",
+        "sha": "22233a208b8776abdab2efcfb5ee34af616cb1ef",
+        "error": null
+      }
+    },
+    {
+      "full_name": "spotify/basic-pitch",
+      "html_url": "https://github.com/spotify/basic-pitch",
+      "description": "A lightweight yet powerful audio-to-MIDI converter with pitch bend detection",
+      "default_branch": "main",
+      "pushed_at": "2025-11-13T14:40:46Z",
+      "updated_at": "2026-09-22T11:37:52Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "homepage": "https://basicpitch.io",
+      "checked_at": "2026-09-22",
+      "head_sha": "fa5997af0a8210982619003269994a1be25eddf3",
+      "head_date": "2025-11-13T14:40:45Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/spotify/basic-pitch/blob/main/README.md",
+        "sha": "97f122a9a1d27417553f7c25c6dd4683b0172e30",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/spotify/basic-pitch/blob/main/LICENSE",
+        "sha": "dc22a7345838b69ab77a02ff021584383b52d0e8",
+        "error": null
+      }
+    },
+    {
+      "full_name": "marl/crepe",
+      "html_url": "https://github.com/marl/crepe",
+      "description": "CREPE: A Convolutional REpresentation for Pitch Estimation -- pre-trained model (ICASSP 2018)",
+      "default_branch": "master",
+      "pushed_at": "2024-08-19T18:12:09Z",
+      "updated_at": "2026-09-21T01:49:05Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "homepage": "https://marl.github.io/crepe/",
+      "checked_at": "2026-09-22",
+      "head_sha": "c9b71ce61491454125a0693f584f7244f29d9884",
+      "head_date": "2024-08-19T18:03:49Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/marl/crepe/blob/master/README.md",
+        "sha": "0dfd282963b41fa4a6b32aace28ee7c4013f1458",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/marl/crepe/blob/master/LICENSE",
+        "sha": "93f465297f59e700e287fc9ddc8a9df22ddaff67",
+        "error": null
+      }
+    },
+    {
+      "full_name": "maxrmorrison/torchcrepe",
+      "html_url": "https://github.com/maxrmorrison/torchcrepe",
+      "description": "Pytorch implementation of the CREPE pitch tracker",
+      "default_branch": "master",
+      "pushed_at": "2025-05-16T18:24:44Z",
+      "updated_at": "2026-09-14T16:02:23Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "homepage": "",
+      "checked_at": "2026-09-22",
+      "head_sha": "19e2ec3d494c0797a5ff2a11408ec5838fba6681",
+      "head_date": "2025-05-16T18:24:42Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/maxrmorrison/torchcrepe/blob/master/README.md",
+        "sha": "99d671e329a83e644a30b94acdf21a9e9c7200c2",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/maxrmorrison/torchcrepe/blob/master/LICENSE",
+        "sha": "efc01ae87f6cc931d539ee9672a4e00aa583814c",
+        "error": null
+      }
+    },
+    {
+      "full_name": "aubio/aubio",
+      "html_url": "https://github.com/aubio/aubio",
+      "description": "a library for audio and music analysis",
+      "default_branch": "master",
+      "pushed_at": "2026-04-10T16:42:19Z",
+      "updated_at": "2026-09-22T17:29:42Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "homepage": "https://aubio.org",
+      "checked_at": "2026-09-22",
+      "head_sha": "ad5cf975aed08cc4562dd008cf9f83b12b82ffb8",
+      "head_date": "2026-04-10T15:11:58Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/aubio/aubio/blob/master/README.md",
+        "sha": "c3cbabbf78c20efbf65a1b7558c798621d083524",
+        "error": null
+      },
+      "license_file": {
+        "path": "COPYING",
+        "html_url": "https://github.com/aubio/aubio/blob/master/COPYING",
+        "sha": "94a9ed024d3859793618152ea559a168bbcbb5e2",
+        "error": null
+      }
+    },
+    {
+      "full_name": "CPJKU/beat_this",
+      "html_url": "https://github.com/CPJKU/beat_this",
+      "description": "Accurate and general beat tracker",
+      "default_branch": "main",
+      "pushed_at": "2026-05-28T21:14:58Z",
+      "updated_at": "2026-09-22T14:44:36Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "homepage": "",
+      "checked_at": "2026-09-22",
+      "head_sha": "b95c8ab0c58c2d9fcfd40508ae8dffbc05ac4f5c",
+      "head_date": "2026-05-28T21:14:47Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/CPJKU/beat_this/blob/main/README.md",
+        "sha": "955931cf33881364dc0fa27e30825d1c83d25adb",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/CPJKU/beat_this/blob/main/LICENSE",
+        "sha": "741094027c09a66d7d06c45d62e5dac33a7317ad",
+        "error": null
+      }
+    },
+    {
+      "full_name": "CPJKU/madmom",
+      "html_url": "https://github.com/CPJKU/madmom",
+      "description": "Python audio and music signal processing library",
+      "default_branch": "main",
+      "pushed_at": "2026-03-20T09:38:58Z",
+      "updated_at": "2026-09-22T14:35:17Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "homepage": "https://madmom.readthedocs.io",
+      "checked_at": "2026-09-22",
+      "head_sha": "27f032e8947204902c675e5e341a3faf5dc86dae",
+      "head_date": "2024-08-25T11:43:40Z",
+      "readme": {
+        "path": "README.rst",
+        "html_url": "https://github.com/CPJKU/madmom/blob/main/README.rst",
+        "sha": "dd99bbf42ed7587a85cd3b060ed8793b784faf98",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/CPJKU/madmom/blob/main/LICENSE",
+        "sha": "fc4fa10c25278b0dde681d3be46d529b945c9061",
+        "error": null
+      }
+    },
+    {
+      "full_name": "MTG/essentia",
+      "html_url": "https://github.com/MTG/essentia",
+      "description": "C++ library for audio and music analysis, description and synthesis, including Python bindings",
+      "default_branch": "master",
+      "pushed_at": "2026-09-21T15:19:07Z",
+      "updated_at": "2026-09-22T08:47:27Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "url": "https://api.github.com/licenses/agpl-3.0",
+        "node_id": "MDc6TGljZW5zZTE="
+      },
+      "homepage": "http://essentia.upf.edu",
+      "checked_at": "2026-09-22",
+      "head_sha": "f6db1f605c72afc889cf0ac82048277a7c75a455",
+      "head_date": "2026-09-21T15:19:07Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/MTG/essentia/blob/master/README.md",
+        "sha": "1e29473afa9dbf153404f83238b593069c5256a8",
+        "error": null
+      },
+      "license_file": {
+        "path": "COPYING.txt",
+        "html_url": "https://github.com/MTG/essentia/blob/master/COPYING.txt",
+        "sha": "83ff0d00954432acb65fc98bdd01189f6c209429",
+        "error": null
+      }
+    },
+    {
+      "full_name": "magenta/mt3",
+      "html_url": "https://github.com/magenta/mt3",
+      "description": "MT3: Multi-Task Multitrack Music Transcription",
+      "default_branch": "main",
+      "pushed_at": "2026-09-15T20:20:59Z",
+      "updated_at": "2026-09-19T08:12:46Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "homepage": null,
+      "checked_at": "2026-09-22",
+      "head_sha": "6bc4cfc749b7c746bcf2f72e4063158db83cc51c",
+      "head_date": "2026-09-15T20:20:29Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/magenta/mt3/blob/main/README.md",
+        "sha": "b839ffe1015e025414f0528d640f86cd9f16497e",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/magenta/mt3/blob/main/LICENSE",
+        "sha": "7a4a3ea2424c09fbe48d455aed1eaa94d9124835",
+        "error": null
+      }
+    },
+    {
+      "full_name": "mido/mido",
+      "html_url": "https://github.com/mido/mido",
+      "description": "MIDI Objects for Python",
+      "default_branch": "main",
+      "pushed_at": "2026-09-16T17:16:31Z",
+      "updated_at": "2026-09-21T19:10:28Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "homepage": "https://mido.readthedocs.io",
+      "checked_at": "2026-09-22",
+      "head_sha": "7c1de5df224a5f0c602af8158c8fc25497ad351b",
+      "head_date": "2026-09-16T17:15:53Z",
+      "readme": {
+        "path": "README.rst",
+        "html_url": "https://github.com/mido/mido/blob/main/README.rst",
+        "sha": "4c98650cb4f0979a5d9003eb688f560078f89ba2",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/mido/mido/blob/main/LICENSE",
+        "sha": "f96d86f2300395d3f6cbfbfbdae365661a95f7ce",
+        "error": null
+      }
+    },
+    {
+      "full_name": "craffel/pretty-midi",
+      "html_url": "https://github.com/craffel/pretty-midi",
+      "description": "Utility functions for handling MIDI data in a nice/intuitive way.",
+      "default_branch": "main",
+      "pushed_at": "2026-02-18T16:33:36Z",
+      "updated_at": "2026-09-19T10:59:23Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "homepage": null,
+      "checked_at": "2026-09-22",
+      "head_sha": "646f7d3b938ba8216f9dd5c4d3f23d017fa0d22e",
+      "head_date": "2025-10-08T18:43:43Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/craffel/pretty-midi/blob/main/README.md",
+        "sha": "90d85a004ebabc67b629c9ceac4015e2d3f3f29b",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE.txt",
+        "html_url": "https://github.com/craffel/pretty-midi/blob/main/LICENSE.txt",
+        "sha": "ae0c0b8eb2b3ac302264f925c4c58892c7759722",
+        "error": null
+      }
+    },
+    {
+      "full_name": "cuthbertLab/music21",
+      "html_url": "https://github.com/cuthbertLab/music21",
+      "description": "music21: a Toolkit for Computer-Aided Musical Analysis and Computational Musicology",
+      "default_branch": "master",
+      "pushed_at": "2026-09-21T19:03:50Z",
+      "updated_at": "2026-09-22T02:56:39Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "homepage": "https://www.music21.org/music21docs/",
+      "checked_at": "2026-09-22",
+      "head_sha": "2b884f60cab094b54fc9561577366d2e5dca2ac0",
+      "head_date": "2026-09-21T19:03:44Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/cuthbertLab/music21/blob/master/README.md",
+        "sha": "4dd520f264f11d209cc0440a0c61d0247973911a",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/cuthbertLab/music21/blob/master/LICENSE",
+        "sha": "50acd0e546aea784886e62b8a16f3e0e8900dd00",
+        "error": null
+      }
+    },
+    {
+      "full_name": "CPJKU/partitura",
+      "html_url": "https://github.com/CPJKU/partitura",
+      "description": "A python package for handling modern staff notation of music",
+      "default_branch": "main",
+      "pushed_at": "2026-08-25T12:29:54Z",
+      "updated_at": "2026-09-22T15:38:32Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "homepage": "https://partitura.readthedocs.io",
+      "checked_at": "2026-09-22",
+      "head_sha": "427ff875bd5a49a0eec894fdd7c6631ed7f597ea",
+      "head_date": "2026-05-25T01:45:36Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/CPJKU/partitura/blob/main/README.md",
+        "sha": "798fe1401018007f1215680b4d1f7ad067627d2c",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/CPJKU/partitura/blob/main/LICENSE",
+        "sha": "475d55dd7d506d3c4b608748778564908dfe3064",
+        "error": null
+      }
+    },
+    {
+      "full_name": "ideoforms/isobar",
+      "html_url": "https://github.com/ideoforms/isobar",
+      "description": "A Python package for creating and manipulating musical patterns, designed for use in algorithmic composition, generative music and sonification. Can be used to generate MIDI events, MIDI files, OSC messages, or custom actions.",
+      "default_branch": "master",
+      "pushed_at": "2026-09-06T17:28:28Z",
+      "updated_at": "2026-09-19T22:38:50Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "homepage": "http://ideoforms.github.io/isobar/",
+      "checked_at": "2026-09-22",
+      "head_sha": "71f5e9f004e947a32c9ecba22e32daed08bef425",
+      "head_date": "2026-09-06T17:28:26Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/ideoforms/isobar/blob/master/README.md",
+        "sha": "22c9b7f12f97bd81dbdaa617eefb58a7c394b6eb",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE.md",
+        "html_url": "https://github.com/ideoforms/isobar/blob/master/LICENSE.md",
+        "sha": "069f72e802bab7089bdffe9e9e9f2d5cd88711e4",
+        "error": null
+      }
+    },
+    {
+      "full_name": "MarcTheSpark/scamp",
+      "html_url": "https://github.com/MarcTheSpark/scamp",
+      "description": "a Suite in Python for Computer-Assisted Music",
+      "default_branch": "main",
+      "pushed_at": "2026-09-22T22:17:12Z",
+      "updated_at": "2026-09-14T20:37:39Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "homepage": "https://scamp.marcevanstein.com",
+      "checked_at": "2026-09-22",
+      "head_sha": "4dc97d9fef36386617d30f8a06ee19516c6dfde6",
+      "head_date": "2026-09-14T20:32:22Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/MarcTheSpark/scamp/blob/main/README.md",
+        "sha": "dcde131ad668bf1f4e02eeb96f4795325b6a783b",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE.txt",
+        "html_url": "https://github.com/MarcTheSpark/scamp/blob/main/LICENSE.txt",
+        "sha": "94a9ed024d3859793618152ea559a168bbcbb5e2",
+        "error": null
+      }
+    },
+    {
+      "full_name": "Impro-Visor/Impro-Visor",
+      "html_url": "https://github.com/Impro-Visor/Impro-Visor",
+      "description": "The Impro-Visor program source",
+      "default_branch": "master",
+      "pushed_at": "2023-12-30T03:07:48Z",
+      "updated_at": "2026-08-20T09:49:57Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "homepage": null,
+      "checked_at": "2026-09-22",
+      "head_sha": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+      "head_date": "2019-06-19T17:14:08Z",
+      "readme": {
+        "path": "README.txt",
+        "html_url": "https://github.com/Impro-Visor/Impro-Visor/blob/master/README.txt",
+        "sha": "616a26473f0d5256583033c15bf5d5e0321ed710",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE.txt",
+        "html_url": "https://github.com/Impro-Visor/Impro-Visor/blob/master/LICENSE.txt",
+        "sha": "b4c2ae7cf85734bf353e4dd6f55a2d78c8f14b21",
+        "error": null
+      }
+    },
+    {
+      "full_name": "jjazzboss/JJazzLab",
+      "html_url": "https://github.com/jjazzboss/JJazzLab",
+      "description": "A complete and open application for automatic backing tracks generation.",
+      "default_branch": "master",
+      "pushed_at": "2026-09-11T18:09:24Z",
+      "updated_at": "2026-09-22T22:48:28Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "lgpl-2.1",
+        "name": "GNU Lesser General Public License v2.1",
+        "spdx_id": "LGPL-2.1",
+        "url": "https://api.github.com/licenses/lgpl-2.1",
+        "node_id": "MDc6TGljZW5zZTEx"
+      },
+      "homepage": "https://www.jjazzlab.org",
+      "checked_at": "2026-09-22",
+      "head_sha": "cd1944afdf8a18b659cdbf63538b6df625a515ec",
+      "head_date": "2026-04-13T14:44:06Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/jjazzboss/JJazzLab/blob/master/README.md",
+        "sha": "e2e21ab706cec7b5cd0a9bd6d5f761bbc6989a50",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/jjazzboss/JJazzLab/blob/master/LICENSE",
+        "sha": "8000a6faacf471c537530805ab29523c7732e11a",
+        "error": null
+      }
+    },
+    {
+      "full_name": "infojunkie/mma",
+      "html_url": "https://github.com/infojunkie/mma",
+      "description": "MMA - Musical MIDI Accompaniment. This is a mirror of the original author's code drops.",
+      "default_branch": "master",
+      "pushed_at": "2026-06-20T21:34:55Z",
+      "updated_at": "2026-09-21T23:36:50Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "homepage": "http://www.mellowood.ca/mma/",
+      "checked_at": "2026-09-22",
+      "head_sha": "c52943c31aa1e64fa9b5313620d5065f91c22773",
+      "head_date": "2026-06-20T20:57:15Z",
+      "readme": {
+        "path": "README",
+        "html_url": "https://github.com/infojunkie/mma/blob/master/README",
+        "sha": "d2f27216c0e9730e81872d9b90800ac82f9fb4c9",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/infojunkie/mma/blob/master/LICENSE",
+        "sha": "60549be514af76c5db0c17ce6bbe01b2f81e2d9e",
+        "error": null
+      }
+    },
+    {
+      "full_name": "Intelligent-Instruments-Lab/notochord",
+      "html_url": "https://github.com/Intelligent-Instruments-Lab/notochord",
+      "description": "Notochord is a real-time neural network model for MIDI performances.",
+      "default_branch": "main",
+      "pushed_at": "2026-02-26T17:00:29Z",
+      "updated_at": "2026-09-22T06:10:12Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "homepage": "https://intelligent-instruments-lab.github.io/notochord/",
+      "checked_at": "2026-09-22",
+      "head_sha": "a17ddd350e7fe45271b21f0e16672e3abfadb5f0",
+      "head_date": "2026-02-23T23:32:33Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/Intelligent-Instruments-Lab/notochord/blob/main/README.md",
+        "sha": "4d697655ea23a9d6d80de99df8e9d7db35f73187",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/Intelligent-Instruments-Lab/notochord/blob/main/LICENSE",
+        "sha": "889f37ccbf4d3d3b0dfe5010511817972c62bfb3",
+        "error": null
+      }
+    },
+    {
+      "full_name": "supercollider/supercollider",
+      "html_url": "https://github.com/supercollider/supercollider",
+      "description": "An audio server, programming language, and IDE for sound synthesis and algorithmic composition.",
+      "default_branch": "develop",
+      "pushed_at": "2026-09-22T20:23:29Z",
+      "updated_at": "2026-09-22T20:23:34Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "homepage": "http://supercollider.github.io",
+      "checked_at": "2026-09-22",
+      "head_sha": "0eb48471d2d79f7e6c9819d49f2f4b84bbd34631",
+      "head_date": "2026-09-22T20:23:29Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/supercollider/supercollider/blob/develop/README.md",
+        "sha": "646f0ac30b5b19c26297c55eeccd953ef7823cbc",
+        "error": null
+      },
+      "license_file": {
+        "path": "COPYING",
+        "html_url": "https://github.com/supercollider/supercollider/blob/develop/COPYING",
+        "sha": "94a9ed024d3859793618152ea559a168bbcbb5e2",
+        "error": null
+      }
+    },
+    {
+      "full_name": "csound/csound",
+      "html_url": "https://github.com/csound/csound",
+      "description": "Main repository for Csound",
+      "default_branch": "develop",
+      "pushed_at": "2026-09-22T19:44:42Z",
+      "updated_at": "2026-09-22T19:44:45Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "lgpl-2.1",
+        "name": "GNU Lesser General Public License v2.1",
+        "spdx_id": "LGPL-2.1",
+        "url": "https://api.github.com/licenses/lgpl-2.1",
+        "node_id": "MDc6TGljZW5zZTEx"
+      },
+      "homepage": "https://csound.com",
+      "checked_at": "2026-09-22",
+      "head_sha": "abde351017f5579c64db209f1705902364bc0408",
+      "head_date": "2026-09-22T19:44:42Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/csound/csound/blob/develop/README.md",
+        "sha": "a37b4cab0d4eff9530471e2f60911a08e2523dc3",
+        "error": null
+      },
+      "license_file": {
+        "path": "COPYING",
+        "html_url": "https://github.com/csound/csound/blob/develop/COPYING",
+        "sha": "0c9df428b494d7c816f602b91672c71c35c31caa",
+        "error": null
+      }
+    },
+    {
+      "full_name": "belangeo/pyo",
+      "html_url": "https://github.com/belangeo/pyo",
+      "description": "Python DSP module",
+      "default_branch": "master",
+      "pushed_at": "2026-07-20T17:13:45Z",
+      "updated_at": "2026-09-21T11:51:47Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "lgpl-3.0",
+        "name": "GNU Lesser General Public License v3.0",
+        "spdx_id": "LGPL-3.0",
+        "url": "https://api.github.com/licenses/lgpl-3.0",
+        "node_id": "MDc6TGljZW5zZTEy"
+      },
+      "homepage": "",
+      "checked_at": "2026-09-22",
+      "head_sha": "bbd1d6ea87023d3cb2fe002e4b6b6e3ce35c831a",
+      "head_date": "2026-07-15T12:25:36Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/belangeo/pyo/blob/master/README.md",
+        "sha": "f7337cf22776672bad38554990dd322b1652911c",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/belangeo/pyo/blob/master/LICENSE",
+        "sha": "853047cf8990fd015ac0ef29e45aee9256d66818",
+        "error": null
+      }
+    },
+    {
+      "full_name": "grame-cncm/faust",
+      "html_url": "https://github.com/grame-cncm/faust",
+      "description": "Functional programming language for signal processing and sound synthesis",
+      "default_branch": "master-dev",
+      "pushed_at": "2026-09-22T10:41:18Z",
+      "updated_at": "2026-09-22T10:41:25Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "homepage": "http://faust.grame.fr",
+      "checked_at": "2026-09-22",
+      "head_sha": "3758c84c51eaac8965de1ad78cdea60b2c2ffb4e",
+      "head_date": "2026-09-22T10:40:06Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/grame-cncm/faust/blob/master-dev/README.md",
+        "sha": "5b4d669cf39a855504004d7ac7c7074091065fd9",
+        "error": null
+      },
+      "license_file": {
+        "path": "COPYING.txt",
+        "html_url": "https://github.com/grame-cncm/faust/blob/master-dev/COPYING.txt",
+        "sha": "de7344a4a45020a649294b3f043320a9ee15f6cc",
+        "error": null
+      }
+    },
+    {
+      "full_name": "FluidSynth/fluidsynth",
+      "html_url": "https://github.com/FluidSynth/fluidsynth",
+      "description": "Software synthesizer based on the SoundFont 2 specifications",
+      "default_branch": "master",
+      "pushed_at": "2026-09-20T07:19:33Z",
+      "updated_at": "2026-09-22T10:53:48Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "lgpl-2.1",
+        "name": "GNU Lesser General Public License v2.1",
+        "spdx_id": "LGPL-2.1",
+        "url": "https://api.github.com/licenses/lgpl-2.1",
+        "node_id": "MDc6TGljZW5zZTEx"
+      },
+      "homepage": "https://www.fluidsynth.org",
+      "checked_at": "2026-09-22",
+      "head_sha": "71e85b2ca6bf48641ba7e2261d8f2640ae473773",
+      "head_date": "2026-09-19T07:44:51Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/FluidSynth/fluidsynth/blob/master/README.md",
+        "sha": "0c24453c7a3844ed6bf5429862103fa5badafc47",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/FluidSynth/fluidsynth/blob/master/LICENSE",
+        "sha": "f6683e74e0f0130f246dbf7054f4cacc88ca84b0",
+        "error": null
+      }
+    },
+    {
+      "full_name": "sfztools/sfizz",
+      "html_url": "https://github.com/sfztools/sfizz",
+      "description": "SFZ parser and synth c++ library, providing a JACK standalone client",
+      "default_branch": "develop",
+      "pushed_at": "2025-03-17T20:18:36Z",
+      "updated_at": "2026-09-17T21:01:29Z",
+      "archived": true,
+      "disabled": false,
+      "license": {
+        "key": "bsd-2-clause",
+        "name": "BSD 2-Clause \"Simplified\" License",
+        "spdx_id": "BSD-2-Clause",
+        "url": "https://api.github.com/licenses/bsd-2-clause",
+        "node_id": "MDc6TGljZW5zZTQ="
+      },
+      "homepage": "https://sfz.tools/sfizz/",
+      "checked_at": "2026-09-22",
+      "head_sha": "f5c6e29f23b8057867c08e88f5f6ac6738baa30b",
+      "head_date": "2025-03-17T20:18:36Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/sfztools/sfizz/blob/develop/README.md",
+        "sha": "7f30fb95fc55dd957c95b3be860f8dc84836475a",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/sfztools/sfizz/blob/develop/LICENSE",
+        "sha": "28b1f2fea63a3d468b3cc0c5baef03fe1eef3304",
+        "error": null
+      }
+    },
+    {
+      "full_name": "surge-synthesizer/surge",
+      "html_url": "https://github.com/surge-synthesizer/surge",
+      "description": "Synthesizer plug-in (previously released as Vember Audio Surge)",
+      "default_branch": "main",
+      "pushed_at": "2026-09-18T17:00:43Z",
+      "updated_at": "2026-09-22T16:02:32Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "homepage": "https://surge-synthesizer.github.io/",
+      "checked_at": "2026-09-22",
+      "head_sha": "58914e59c608ed4384ba6002e44c3465c58b2e71",
+      "head_date": "2026-09-18T16:09:20Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/surge-synthesizer/surge/blob/main/README.md",
+        "sha": "aa38defd4db7f6914336c75ea8fe108a4428cb54",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/surge-synthesizer/surge/blob/main/LICENSE",
+        "sha": "0c95a3ee7bb1f088b951f32dd110cd8d83570db6",
+        "error": null
+      }
+    },
+    {
+      "full_name": "hydrogen-music/hydrogen",
+      "html_url": "https://github.com/hydrogen-music/hydrogen",
+      "description": "The advanced drum machine for Linux, macOS, and Windows",
+      "default_branch": "main",
+      "pushed_at": "2026-09-22T18:37:14Z",
+      "updated_at": "2026-09-20T18:02:06Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "homepage": "http://www.hydrogen-music.org",
+      "checked_at": "2026-09-22",
+      "head_sha": "7440c1175574a624d518d820ff7fcc597b11c4f3",
+      "head_date": "2026-09-11T14:14:05Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/hydrogen-music/hydrogen/blob/main/README.md",
+        "sha": "b529102a1dfb2c6552ac833eeba6c5c666da15c3",
+        "error": null
+      },
+      "license_file": {
+        "path": "COPYING",
+        "html_url": "https://github.com/hydrogen-music/hydrogen/blob/main/COPYING",
+        "sha": "5b6e7c66c276e7610d4a73c70ec1a1f7c1003259",
+        "error": null
+      }
+    },
+    {
+      "full_name": "DBraun/DawDreamer",
+      "html_url": "https://github.com/DBraun/DawDreamer",
+      "description": "Digital Audio Workstation with Python; VST instruments/effects, parameter automation, FAUST, JAX, Warp Markers, and JUCE processors",
+      "default_branch": "main",
+      "pushed_at": "2026-09-01T04:25:36Z",
+      "updated_at": "2026-09-22T06:43:57Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "homepage": "http://dirt.design/DawDreamer/",
+      "checked_at": "2026-09-22",
+      "head_sha": "727469f1317e96d0acee80d19fd57aeb0dbd0948",
+      "head_date": "2026-08-12T17:01:19Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/DBraun/DawDreamer/blob/main/README.md",
+        "sha": "4c02b4f0e6b2027d18b8b69dcca6ae13fc329e77",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/DBraun/DawDreamer/blob/main/LICENSE",
+        "sha": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+        "error": null
+      }
+    },
+    {
+      "full_name": "spotify/pedalboard",
+      "html_url": "https://github.com/spotify/pedalboard",
+      "description": "\ud83c\udf9b \ud83d\udd0a A Python library for audio.",
+      "default_branch": "master",
+      "pushed_at": "2026-09-22T20:21:39Z",
+      "updated_at": "2026-09-22T15:15:23Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "homepage": "https://spotify.github.io/pedalboard",
+      "checked_at": "2026-09-22",
+      "head_sha": "d4e18fcf822e1602e014a24ddd670d8a9bf8a3f9",
+      "head_date": "2026-09-09T20:52:14Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/spotify/pedalboard/blob/master/README.md",
+        "sha": "a449423ed8a7eae0143df4a13eddeabe5ad6da2e",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/spotify/pedalboard/blob/master/LICENSE",
+        "sha": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+        "error": null
+      }
+    },
+    {
+      "full_name": "breakfastquay/rubberband",
+      "html_url": "https://github.com/breakfastquay/rubberband",
+      "description": "Official mirror of Rubber Band Library, an audio time-stretching and pitch-shifting library.",
+      "default_branch": "default",
+      "pushed_at": "2025-03-03T15:56:58Z",
+      "updated_at": "2026-09-21T09:43:11Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "homepage": "http://breakfastquay.com/rubberband/",
+      "checked_at": "2026-09-22",
+      "head_sha": "e4296ac80b1170018a110bc326fd0d45a0eb27d6",
+      "head_date": "2025-02-27T11:04:40Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/breakfastquay/rubberband/blob/default/README.md",
+        "sha": "ce3a6d03429cfe178f0fded5452d6c2a4d3298a3",
+        "error": null
+      },
+      "license_file": {
+        "path": "COPYING",
+        "html_url": "https://github.com/breakfastquay/rubberband/blob/default/COPYING",
+        "sha": "9b4cfd7f63bfd118e0da1832d9279a9c6cf3e2c9",
+        "error": null
+      }
+    },
+    {
+      "full_name": "Signalsmith-Audio/signalsmith-stretch",
+      "html_url": "https://github.com/Signalsmith-Audio/signalsmith-stretch",
+      "description": "C++ polyphonic pitch/time library (GitHub mirror)",
+      "default_branch": "main",
+      "pushed_at": "2026-01-24T09:07:32Z",
+      "updated_at": "2026-09-21T18:59:35Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "homepage": "https://signalsmith-audio.co.uk/code/stretch/",
+      "checked_at": "2026-09-22",
+      "head_sha": "57b93f4e9206a089a45387eaa39bdc9f310d3308",
+      "head_date": "2026-01-24T08:58:36Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/Signalsmith-Audio/signalsmith-stretch/blob/main/README.md",
+        "sha": "c3c57e737003bb671abb95158ef3f1e4aa318ab3",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE.txt",
+        "html_url": "https://github.com/Signalsmith-Audio/signalsmith-stretch/blob/main/LICENSE.txt",
+        "sha": "889031e63236bb72aa28ff2ec2362db1691723d1",
+        "error": null
+      }
+    },
+    {
+      "full_name": "flucoma/flucoma-core",
+      "html_url": "https://github.com/flucoma/flucoma-core",
+      "description": "Core algorithms and objects for the Fluid Corpus Manipulation Library",
+      "default_branch": "main",
+      "pushed_at": "2026-04-11T12:02:25Z",
+      "updated_at": "2026-09-06T03:33:59Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "homepage": null,
+      "checked_at": "2026-09-22",
+      "head_sha": "0626d7a3438060965231f034eca07b981ec36fc4",
+      "head_date": "2026-04-11T12:02:25Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/flucoma/flucoma-core/blob/main/README.md",
+        "sha": "6f8dc5c7db4227d7c7034edf275c9462656bdb18",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE.md",
+        "html_url": "https://github.com/flucoma/flucoma-core/blob/main/LICENSE.md",
+        "sha": "3b3d13c0a3d0afd9427d5034f35ad0bbd5694413",
+        "error": null
+      }
+    },
+    {
+      "full_name": "flucoma/flucoma-cli",
+      "html_url": "https://github.com/flucoma/flucoma-cli",
+      "description": "Fluid Corpus Manipulation programs for the command line",
+      "default_branch": "main",
+      "pushed_at": "2026-04-11T12:20:16Z",
+      "updated_at": "2025-12-11T15:06:48Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "homepage": null,
+      "checked_at": "2026-09-22",
+      "head_sha": "b1e88f261d32be1672a3109c0dbf5d20de92c8a7",
+      "head_date": "2025-04-01T06:13:41Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/flucoma/flucoma-cli/blob/main/README.md",
+        "sha": "788f99373e490ede4c267266b8b13281a0a4de5c",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE.md",
+        "html_url": "https://github.com/flucoma/flucoma-cli/blob/main/LICENSE.md",
+        "sha": "3b3d13c0a3d0afd9427d5034f35ad0bbd5694413",
+        "error": null
+      }
+    },
+    {
+      "full_name": "benhackbarth/audioguide",
+      "html_url": "https://github.com/benhackbarth/audioguide",
+      "description": "AudioGuide is an OSX standalone program for concatenative sound synthesis written in python. Interacting with the program is done via textfiles written in a simple syntax. AudioGuide renders concatenations automatically using csound, but also includes support for Max, Logic, Reaper, Pro Tools, music notation via bach, and json files.",
+      "default_branch": "master",
+      "pushed_at": "2024-11-12T22:57:59Z",
+      "updated_at": "2026-07-05T18:45:48Z",
+      "archived": false,
+      "disabled": false,
+      "license": null,
+      "homepage": "http://www.benhackbarth.com/audioGuide/index.html",
+      "checked_at": "2026-09-22",
+      "head_sha": "12c2337c6cafcba307c3398849fe0a7e71c31c0b",
+      "head_date": "2024-11-12T22:41:11Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/benhackbarth/audioguide/blob/master/README.md",
+        "sha": "dad9839c5c3a6f769d5504e3b64ae033ebe81dcb",
+        "error": null
+      },
+      "license_file": {
+        "path": null,
+        "html_url": null,
+        "sha": null,
+        "error": "gh: Not Found (HTTP 404)\n"
+      }
+    },
+    {
+      "full_name": "sonic-pi-net/sonic-pi",
+      "html_url": "https://github.com/sonic-pi-net/sonic-pi",
+      "description": "Code. Music. Live.",
+      "default_branch": "dev",
+      "pushed_at": "2026-09-20T14:15:12Z",
+      "updated_at": "2026-09-22T22:17:37Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "homepage": "https://sonic-pi.net",
+      "checked_at": "2026-09-22",
+      "head_sha": "aaaef697834c044b52e0005d31213430834ea48f",
+      "head_date": "2026-09-20T14:14:54Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/sonic-pi-net/sonic-pi/blob/dev/README.md",
+        "sha": "a254ca686b37d1fdd66524baec8f36ea36b2e71e",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE.md",
+        "html_url": "https://github.com/sonic-pi-net/sonic-pi/blob/dev/LICENSE.md",
+        "sha": "f93739fd0652c9786e2f596ee63c17203846f855",
+        "error": null
+      }
+    },
+    {
+      "full_name": "acids-ircam/RAVE",
+      "html_url": "https://github.com/acids-ircam/RAVE",
+      "description": "Official implementation of the RAVE model: a Realtime Audio Variational autoEncoder",
+      "default_branch": "master",
+      "pushed_at": "2026-03-07T19:30:11Z",
+      "updated_at": "2026-09-18T13:18:40Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "homepage": "",
+      "checked_at": "2026-09-22",
+      "head_sha": "f048ec4569afba7c6ba38d590be8a07b8ab24840",
+      "head_date": "2025-04-26T01:39:04Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/acids-ircam/RAVE/blob/master/README.md",
+        "sha": "3bad4cbd1a1794f74b57a65b885506b90b42a933",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/acids-ircam/RAVE/blob/master/LICENSE",
+        "sha": "d42a5530e68bf1f652453ec7c4b9bb1a32e12ad9",
+        "error": null
+      }
+    },
+    {
+      "full_name": "magenta/ddsp",
+      "html_url": "https://github.com/magenta/ddsp",
+      "description": " DDSP: Differentiable Digital Signal Processing",
+      "default_branch": "main",
+      "pushed_at": "2026-09-22T16:35:39Z",
+      "updated_at": "2026-09-22T16:35:46Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "homepage": "https://magenta.tensorflow.org/ddsp",
+      "checked_at": "2026-09-22",
+      "head_sha": "6b6b8a31832290b1ef756c15129b1e32446acb10",
+      "head_date": "2026-09-22T16:35:38Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/magenta/ddsp/blob/main/README.md",
+        "sha": "4cb34c79877f7629ddd9e98fbd3fba4b5dfba632",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/magenta/ddsp/blob/main/LICENSE",
+        "sha": "85a98a45eb09114bae531bf26fce12303d9f91c7",
+        "error": null
+      }
+    },
+    {
+      "full_name": "facebookresearch/audiocraft",
+      "html_url": "https://github.com/facebookresearch/audiocraft",
+      "description": "Audiocraft is a library for audio processing and generation with deep learning. It features the state-of-the-art EnCodec audio compressor / tokenizer, along with MusicGen, a simple and controllable music generation LM with textual and melodic conditioning.",
+      "default_branch": "main",
+      "pushed_at": "2026-03-03T21:50:32Z",
+      "updated_at": "2026-09-22T21:23:50Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "homepage": null,
+      "checked_at": "2026-09-22",
+      "head_sha": "896ec7c47f5e5d1e5aa1e4b260c4405328bf009d",
+      "head_date": "2025-03-13T16:01:11Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/facebookresearch/audiocraft/blob/main/README.md",
+        "sha": "67218f87ffd5d3a9f701321f5944d635347cf897",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/facebookresearch/audiocraft/blob/main/LICENSE",
+        "sha": "b93be90515ccd0b9daedaa589e42bf5929693f1f",
+        "error": null
+      }
+    },
+    {
+      "full_name": "ace-step/ACE-Step-1.5",
+      "html_url": "https://github.com/ace-step/ACE-Step-1.5",
+      "description": "The most powerful local music generation model that outperforms almost all commercial alternatives, supporting Mac, AMD, Intel, and CUDA devices.",
+      "default_branch": "main",
+      "pushed_at": "2026-09-03T02:46:44Z",
+      "updated_at": "2026-09-23T00:42:39Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "homepage": "https://acemusic.ai/",
+      "checked_at": "2026-09-22",
+      "head_sha": "ca1e85fe9430179831e6bc6be790c332190a3866",
+      "head_date": "2026-08-29T08:25:18Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/ace-step/ACE-Step-1.5/blob/main/README.md",
+        "sha": "f5c20302cde16e37e8a17ea28308495371befbfa",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/ace-step/ACE-Step-1.5/blob/main/LICENSE",
+        "sha": "600451d484a555c1273baa2602f32a37fdd0d0ab",
+        "error": null
+      }
+    },
+    {
+      "full_name": "Stability-AI/stable-audio-tools",
+      "html_url": "https://github.com/Stability-AI/stable-audio-tools",
+      "description": "Generative models for conditional audio generation",
+      "default_branch": "main",
+      "pushed_at": "2026-09-18T22:33:51Z",
+      "updated_at": "2026-09-22T10:13:18Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "homepage": null,
+      "checked_at": "2026-09-22",
+      "head_sha": "3241adba4fc2a85cf5b29d9eb68d42f40a28e820",
+      "head_date": "2026-05-26T23:34:41Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/Stability-AI/stable-audio-tools/blob/main/README.md",
+        "sha": "325762257ebf6f96cd70b940d960ffb6eac7a9b7",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/Stability-AI/stable-audio-tools/blob/main/LICENSE",
+        "sha": "f119f94cf2ec8269020dd0d8140a4c4b83cc65a1",
+        "error": null
+      }
+    },
+    {
+      "full_name": "magenta/magenta",
+      "html_url": "https://github.com/magenta/magenta",
+      "description": "Magenta: Music and Art Generation with Machine Intelligence",
+      "default_branch": "main",
+      "pushed_at": "2026-01-06T01:17:54Z",
+      "updated_at": "2026-09-21T08:24:12Z",
+      "archived": true,
+      "disabled": false,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "homepage": "",
+      "checked_at": "2026-09-22",
+      "head_sha": "c15687ebd1c1cc12658cd468c737d3c24c02b918",
+      "head_date": "2026-01-06T01:17:53Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/magenta/magenta/blob/main/README.md",
+        "sha": "43f8e8b884c59749e1cb102406494f110e8e7554",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/magenta/magenta/blob/main/LICENSE",
+        "sha": "e3db600004feafb55a78b8c0976abf89fa7fc8bb",
+        "error": null
+      }
+    },
+    {
+      "full_name": "magenta/magenta-realtime",
+      "html_url": "https://github.com/magenta/magenta-realtime",
+      "description": "Magenta RealTime 2: An Open-Weights Live Music Model",
+      "default_branch": "main",
+      "pushed_at": "2026-09-13T09:32:25Z",
+      "updated_at": "2026-09-22T16:29:25Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "homepage": "https://magenta.withgoogle.com/magenta-realtime-2",
+      "checked_at": "2026-09-22",
+      "head_sha": "694a545e4ba0b88bf1150137b129582166d3e07f",
+      "head_date": "2026-07-30T16:30:43Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/magenta/magenta-realtime/blob/main/README.md",
+        "sha": "e33fde49c6e6e21a4c2895efab10605074fb1852",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/magenta/magenta-realtime/blob/main/LICENSE",
+        "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+        "error": null
+      }
+    },
+    {
+      "full_name": "sigsep/open-unmix-pytorch",
+      "html_url": "https://github.com/sigsep/open-unmix-pytorch",
+      "description": "Open-Unmix - Music Source Separation for PyTorch",
+      "default_branch": "master",
+      "pushed_at": "2024-06-17T23:15:26Z",
+      "updated_at": "2026-09-21T09:06:20Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "homepage": "https://sigsep.github.io/open-unmix/",
+      "checked_at": "2026-09-22",
+      "head_sha": "fb672c9584997c2b05e148eeaa65b4c23ed4693b",
+      "head_date": "2024-04-16T11:19:48Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/sigsep/open-unmix-pytorch/blob/master/README.md",
+        "sha": "406947dc144e009427e1806f86ebe015e27be92b",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/sigsep/open-unmix-pytorch/blob/master/LICENSE",
+        "sha": "4267b01da7a50980c2ce7393245000e283d3ab7d",
+        "error": null
+      }
+    },
+    {
+      "full_name": "csteinmetz1/dasp-pytorch",
+      "html_url": "https://github.com/csteinmetz1/dasp-pytorch",
+      "description": "Differentiable audio signal processors in PyTorch",
+      "default_branch": "main",
+      "pushed_at": "2023-12-04T08:06:18Z",
+      "updated_at": "2026-09-16T20:15:30Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "homepage": "https://csteinmetz1.github.io/dasp-pytorch/",
+      "checked_at": "2026-09-22",
+      "head_sha": "c9ae0126e1c441979b93995da061503a0abdceff",
+      "head_date": "2023-12-04T08:06:14Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/csteinmetz1/dasp-pytorch/blob/main/README.md",
+        "sha": "12de725dc997ee999ad04831c99bb062f1ec29e6",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/csteinmetz1/dasp-pytorch/blob/main/LICENSE",
+        "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+        "error": null
+      }
+    },
+    {
+      "full_name": "MusicLang/musiclang",
+      "html_url": "https://github.com/MusicLang/musiclang",
+      "description": null,
+      "default_branch": "main",
+      "pushed_at": "2024-03-25T08:51:32Z",
+      "updated_at": "2026-09-10T19:33:02Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "bsd-2-clause",
+        "name": "BSD 2-Clause \"Simplified\" License",
+        "spdx_id": "BSD-2-Clause",
+        "url": "https://api.github.com/licenses/bsd-2-clause",
+        "node_id": "MDc6TGljZW5zZTQ="
+      },
+      "homepage": null,
+      "checked_at": "2026-09-22",
+      "head_sha": "6d1f4afc88cdbc7be3635862cafd980e41e77f67",
+      "head_date": "2024-03-25T08:51:32Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/MusicLang/musiclang/blob/main/README.md",
+        "sha": "69fee4389b5527c7cb167da7c9c05cc297e930d3",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE.md",
+        "html_url": "https://github.com/MusicLang/musiclang/blob/main/LICENSE.md",
+        "sha": "bf2ebf04eb9c102f4ebe51e3ee8aeac99becf4df",
+        "error": null
+      }
+    },
+    {
+      "full_name": "sgossner/VSCO-2-CE",
+      "html_url": "https://github.com/sgossner/VSCO-2-CE",
+      "description": "An open-source orchestral library",
+      "default_branch": "master",
+      "pushed_at": "2021-04-06T00:54:46Z",
+      "updated_at": "2026-09-19T22:26:59Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "cc0-1.0",
+        "name": "Creative Commons Zero v1.0 Universal",
+        "spdx_id": "CC0-1.0",
+        "url": "https://api.github.com/licenses/cc0-1.0",
+        "node_id": "MDc6TGljZW5zZTY="
+      },
+      "homepage": null,
+      "checked_at": "2026-09-22",
+      "head_sha": "440300901dfe9275fd84e0b7763af1f8443ae62e",
+      "head_date": "2020-08-05T01:40:47Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/sgossner/VSCO-2-CE/blob/master/README.md",
+        "sha": "64362229eaee3d93aae6cb86446b6b5f4f0a1170",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/sgossner/VSCO-2-CE/blob/master/LICENSE",
+        "sha": "670154e3538863b2d9891fd5483160fbdfc89164",
+        "error": null
+      }
+    },
+    {
+      "full_name": "sgossner/VCSL",
+      "html_url": "https://github.com/sgossner/VCSL",
+      "description": "Open CC0 sample library.",
+      "default_branch": "master",
+      "pushed_at": "2026-01-14T20:39:39Z",
+      "updated_at": "2026-09-11T02:40:13Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "cc0-1.0",
+        "name": "Creative Commons Zero v1.0 Universal",
+        "spdx_id": "CC0-1.0",
+        "url": "https://api.github.com/licenses/cc0-1.0",
+        "node_id": "MDc6TGljZW5zZTY="
+      },
+      "homepage": null,
+      "checked_at": "2026-09-22",
+      "head_sha": "c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e",
+      "head_date": "2026-01-14T20:39:38Z",
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/sgossner/VCSL/blob/master/README.md",
+        "sha": "655eaa2be2a415dfa526bf6e7729aa40590ac0e8",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/sgossner/VCSL/blob/master/LICENSE",
+        "sha": "0e259d42c996742e9e3cba14c677129b2c1b6311",
+        "error": null
+      }
+    },
+    {
+      "full_name": "freepats/electric-guitar-FSBS-clean",
+      "html_url": "https://github.com/freepats/electric-guitar-FSBS-clean",
+      "description": "Electric Guitar FSFB (clean) - SFZ instrument",
+      "default_branch": "main",
+      "pushed_at": "2026-08-07T10:13:28Z",
+      "updated_at": "2026-08-07T10:04:34Z",
+      "archived": false,
+      "disabled": false,
+      "license": {
+        "key": "cc0-1.0",
+        "name": "Creative Commons Zero v1.0 Universal",
+        "spdx_id": "CC0-1.0",
+        "url": "https://api.github.com/licenses/cc0-1.0",
+        "node_id": "MDc6TGljZW5zZTY="
+      },
+      "homepage": "https://freepats.zenvoid.org/ElectricGuitar/clean-electric-guitar.html",
+      "checked_at": "2026-09-22",
+      "head_sha": "192cf0d9bf2c4ba6ead8e3524ba3f78818e4fe91",
+      "head_date": "2026-08-07T10:03:19Z",
+      "readme": {
+        "path": "README.txt",
+        "html_url": "https://github.com/freepats/electric-guitar-FSBS-clean/blob/main/README.txt",
+        "sha": "05444d1ce28201580192f4583ab48ae81c2fd987",
+        "error": null
+      },
+      "license_file": {
+        "path": "LICENSE.txt",
+        "html_url": "https://github.com/freepats/electric-guitar-FSBS-clean/blob/main/LICENSE.txt",
+        "sha": "0e259d42c996742e9e3cba14c677129b2c1b6311",
+        "error": null
+      }
+    }
+  ],
+  "additional_files": [
+    {
+      "repo": "magenta/magenta-realtime",
+      "path": "MODEL.md",
+      "sha": "0561e4ad80d42f787e66fac1865d0f25c02c8205",
+      "url": "https://github.com/magenta/magenta-realtime/blob/main/MODEL.md"
+    },
+    {
+      "repo": "magenta/magenta-realtime",
+      "path": "docs/inference.md",
+      "sha": "83a16abb1b3b6ea0c4804152c47370b29f72e780",
+      "url": "https://github.com/magenta/magenta-realtime/blob/main/docs/inference.md"
+    },
+    {
+      "repo": "magenta/magenta-realtime",
+      "path": "docs/models.md",
+      "sha": "088ad144bdb03eee77db79c79178a913cfc0d13f",
+      "url": "https://github.com/magenta/magenta-realtime/blob/main/docs/models.md"
+    },
+    {
+      "repo": "ace-step/ACE-Step-1.5",
+      "path": "docs/en/INFERENCE.md",
+      "sha": "76fa0cc727261cfa4061c32cc9d1b3a824272895",
+      "url": "https://github.com/ace-step/ACE-Step-1.5/blob/main/docs/en/INFERENCE.md"
+    },
+    {
+      "repo": "microsoft/muzic",
+      "path": "getmusic/README.md",
+      "sha": "dc9bd52c8ecc957e5fe88fda3b23345f0b5669f8",
+      "url": "https://github.com/microsoft/muzic/blob/main/getmusic/README.md"
+    }
+  ]
+}

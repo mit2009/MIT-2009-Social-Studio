@@ -6,6 +6,10 @@ Generate three possibilities, compare, rate, select, and advance. Make three fin
 
 Built for Danny, Talla, and the 2.009 TAs, with a small student trial as the next milestone. The purpose is entertaining, inspiring stories about the course and interest in the **December 7, 2026 final presentations livestream**. Humans retain taste, authorship, and approval.
 
+## House band research — review before further implementation
+
+The latest research explores 64 open-source/source-available repositories by purpose and proposes 12 distinct musicians, including algorithmic composition, rhythm, granular/corpus methods and neural transformation. Read the [living research notebook](docs/house-band/README.md), [inventory](docs/house-band/INVENTORY.md) and [experiment protocols](docs/house-band/EXPERIMENTS.md). These are proposals; the existing app below is unchanged and no new architecture has been selected.
+
 ## Current direction: musical authorship
 
 Danny's revised brief is a musical phrase interpreted by three convincing ensembles, with no recognizable lyrics. The interface now uses the Connect wordmark, supplied color palette and Outfit font, with one musical input and no bed/effects controls.

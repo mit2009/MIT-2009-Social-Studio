@@ -2,6 +2,10 @@
 
 Status: free local musical-authorship prototype. The accepted melody score now drives three arrangements using recorded CC0 instruments and locally synthesized electronic voices. Listening review rejected the earlier model drafts for insufficient sound quality. Professional-quality success still requires listening; the earlier procedural prototype remains in Git. See ORCHESTRATION-TRIAL.md.
 
+## Latest research checkpoint — September 22, 2026
+
+Danny requested broad open-source house-band research before further implementation. The future system may preserve, develop or substantially transform the input; exact melody preservation is a contract for conservative musicians, not a universal requirement for every experiment. The current implementation remains unchanged. See [the living research notebook](house-band/README.md) for the ranked-by-purpose inventory, 12 proposed experiments and a review stop before selecting an architecture. Keep the fixed 15-second project duration, no paid generation API, meaningful student contribution and human curation. Do not treat these proposals as approval to build the complete system.
+
 ## Purpose
 
 Help people create entertaining, inspiring stories about MIT 2.009, supporting interest in the December 7, 2026 final presentations livestream. Enable student authorship through comparative judgment.
