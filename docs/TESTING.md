@@ -1,3 +1,15 @@
+# Upbeat, no-piano audition revision
+
+38 tests passed in 44.19 seconds on September 22, 2026; Ruff and JavaScript syntax checks passed. Two existing upstream test-client deprecation warnings remain. New checks cover the three distinct lead instruments, exact accepted pitch/onset preservation, absence of piano, replies fitting rests, bounded event timing, deterministic finite electronic voices, and synth tuning. The full API/export regression uses synthetic instrument fixtures and does not establish real-instrument quality.
+
+The expanded catalog was installed and its files hash-verified. Separate waveform spot checks found guitar MIDI 59.01 against expected 59, trumpet 60.03 against 60, trombone 58.00 against 58 and plucked violin 59.81 against 60. These do not certify every recording or perceived tuning.
+
+The actual three-draft batch finished in 4.717 seconds with zero API cost. Independent checks found three distinct 15-second, 48 kHz stereo masters, finite samples, no clipping, immediate audible signal and all 31 accepted lead pitches/onsets preserved. No arrangement contains piano events. Original, normalized-source, accepted-score and guide hashes remain unchanged. The saved report is under ignored `data/verification/upbeat-hooks/report.json`; stems and scores are beside each render.
+
+The embedded browser displayed Club bounce, Indie dance and Brass bounce with 15-second players. Club bounce playback advanced without a media error. Ratings, selections and approval remain unset by the assistant. Technical checks cannot establish fun, professional musicianship or college-student appeal; those require listening review.
+
+---
+
 # Recorded-instrument quality revision
 
 Listening review rejected the first model drafts because sound quality did not meet the target. The revised engine performs the accepted note score with a recorded grand piano and independently written accompaniment. It does not treat the earlier passing technical tests as evidence of satisfactory sound.

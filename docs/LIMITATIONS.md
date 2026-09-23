@@ -4,7 +4,7 @@
 
 ## Deliberately unfinished
 
-- The current arranger preserves accepted melody pitches/onsets but uses heuristic harmony and accompaniment. It can sound mechanical or harmonize poorly, and has no true legato string transitions. Recorded samples alone do not prove professional ensemble quality. Setup requires about 364 MB of free instrument downloads. The earlier model and its separate license/runtime remain historical.
+- The current arranger preserves accepted melody pitches/onsets but uses heuristic harmony and accompaniment. It can sound mechanical or harmonize poorly, and has no true legato string transitions. The new synth, electric-guitar and brass versions target a more upbeat feel, but college-student appeal and professional ensemble quality need listening trials. The fixed accompaniment pulse can clash with a rubato lead; preserving the accepted melody does not prove a convincing groove. Setup requires about 489 MB of free instrument downloads. The earlier model and its separate license/runtime remain historical.
 - One local declared author per project; no verified identity, separate per-action collaborators, access control or tamper-proof audit log. Anyone using this local instance can access its projects.
 - Three current audio arrangements, three visual families, three text families and three assembly recipes. Nine historical DSP audio recipes remain internal. Style files are editable, but new algorithms need implementation. No conversational refinement/prompt editor. Another batch is a fresh explicit generation request.
 - Original Mix uses the first 15 seconds. Long recordings are cropped to that excerpt, short ones padded with silence. The complete original remains saved. No trim-point picker yet.

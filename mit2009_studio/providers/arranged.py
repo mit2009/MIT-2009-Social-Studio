@@ -16,31 +16,34 @@ ROOT = Path(__file__).resolve().parents[2]
 CATALOG = ROOT / "mit2009_studio/instruments.json"
 SAMPLES = ROOT / "data/instruments"
 PROVIDER = "local-recorded-ensembles"
-MODEL = "Recorded instruments · phrase arranger 1"
+MODEL = "Local instruments · phrase arranger 2"
 STYLES = [
     {
         "id": "dance",
         "family": "dance",
         "mode": "ensemble",
-        "name": "Piano house",
+        "name": "Club bounce",
+        "feel": "upbeat",
         "color": "#1f78bb",
-        "description": "Recorded grand piano carries your phrase above deep bass and a crisp dance pulse.",
+        "description": "Your melody becomes a wide plucked-synth hook, with offbeat bass and a punchy club beat.",
     },
     {
         "id": "chamber",
         "family": "chamber",
         "mode": "ensemble",
-        "name": "Piano & strings",
+        "name": "Indie dance",
+        "feel": "upbeat",
         "color": "#924c9e",
-        "description": "Grand piano keeps your melody; violin and cellos add soft, moving harmony.",
+        "description": "Bright electric guitar, plucked-string replies and a springy dance beat carry your phrase.",
     },
     {
         "id": "jazz",
         "family": "jazz",
         "mode": "ensemble",
-        "name": "Acoustic jazz trio",
+        "name": "Brass bounce",
+        "feel": "upbeat",
         "color": "#ee3a80",
-        "description": "Recorded piano, plucked upright bass and light drums play around your phrase.",
+        "description": "A bold trumpet hook, short brass punches and a syncopated bass groove answer your phrase.",
     },
 ]
 
@@ -108,7 +111,11 @@ def close_pitch(pc, around, low, high):
     return min((p for p in range(low, high + 1) if p % 12 == pc % 12), key=lambda p: abs(p - around))
 
 
-def arrange(score, style, seed, duration=15):
+def arrange(score, style, seed, duration=15, *, feel="original"):
+    if feel == "upbeat":
+        from .upbeat import arrange_upbeat
+
+        return arrange_upbeat(score, style, seed, duration)
     notes = melody_notes(score)
     rng = np.random.default_rng(seed)
     end = max(n["start"] + n["duration"] for n in notes)
@@ -229,6 +236,10 @@ class InstrumentBank:
     def voice(self, event):
         instrument, note, velocity = event["instrument"], event["midi"], event["velocity"]
         length = event["duration"]
+        from .electronic import VOICES, voice
+
+        if instrument in VOICES:
+            return voice(event)
         if instrument == "sub":
             t = np.arange(round((length + 0.08) * media.SAMPLE_RATE)) / media.SAMPLE_RATE
             phase = 2 * np.pi * (440 * 2 ** ((note - 69) / 12)) * t
@@ -265,7 +276,19 @@ class InstrumentBank:
             self.cache[key] = audio / peak
             self.used[entry["file"]] = entry["git_blob"]
         source = self.cache[key]
-        release = {"piano": 0.48, "bass": 0.22, "violin": 0.30, "cello": 0.34}.get(instrument, 0.15)
+        release = {
+            "piano": 0.48,
+            "bass": 0.22,
+            "violin": 0.30,
+            "cello": 0.34,
+            "violin_pizz": 0.18,
+            "cello_pizz": 0.23,
+            "guitar": 0.20,
+            "trumpet": 0.11,
+            "trombone": 0.13,
+        }.get(instrument, 0.15)
+        if event.get("articulation") == "detached" and instrument == "piano":
+            release = 0.28
         count = min(len(source), round((length + release) * media.SAMPLE_RATE))
         audio = source[:count].copy()
         t = np.arange(count) / media.SAMPLE_RATE
@@ -276,6 +299,11 @@ class InstrumentBank:
             "piano": 0.40,
             "violin": 0.20,
             "cello": 0.28,
+            "violin_pizz": 0.30,
+            "cello_pizz": 0.35,
+            "guitar": 0.42,
+            "trumpet": 0.36,
+            "trombone": 0.28,
             "bass": 0.36,
             "kick": 0.43,
             "snare": 0.24,
@@ -309,7 +337,14 @@ class RecordedEnsembleProvider:
         if request.score is None:
             raise ValueError("The accepted melody score is required.")
         score = json.loads(Path(request.score).read_text())
-        arrangement = arrange(score, request.style["id"], request.seed, request.duration)
+        upbeat = request.style.get("feel") == "upbeat"
+        arrangement = arrange(
+            score,
+            request.style["id"],
+            request.seed,
+            request.duration,
+            feel="upbeat" if upbeat else "original",
+        )
         folder = Path(folder)
         bank = InstrumentBank(installed)
         tracks = {
@@ -326,14 +361,20 @@ class RecordedEnsembleProvider:
         # Melody stays forward; accompaniment supports it instead of masking it.
         lead_rms = np.sqrt(np.mean(tracks["melody"] ** 2))
         support_rms = np.sqrt(np.mean(tracks["accompaniment"] ** 2))
-        target = 0.70 if request.style["id"] == "dance" else 0.48
+        target = (
+            {"dance": 1.05, "chamber": 0.76, "jazz": 0.85}[request.style["id"]]
+            if upbeat
+            else 0.70
+            if request.style["id"] == "dance"
+            else 0.48
+        )
         support_gain = min(1.0, target * lead_rms / max(support_rms, 1e-8))
         tracks["accompaniment"] *= support_gain
         combined = sum(tracks.values())
         combined = room(
             combined,
-            1.3 if request.style["id"] == "chamber" else 0.75,
-            0.13 if request.style["id"] == "chamber" else 0.065,
+            0.60 if upbeat else 1.3 if request.style["id"] == "chamber" else 0.75,
+            0.045 if upbeat else 0.13 if request.style["id"] == "chamber" else 0.065,
             request.seed,
         )
         peak = float(np.abs(combined).max())
@@ -364,6 +405,9 @@ class RecordedEnsembleProvider:
                 "license": "CC0-1.0",
                 "lead_notes": len(arrangement["melody_notes"]),
                 "lead_pitch_and_onsets_preserved": True,
+                "arranger_version": arrangement["version"],
+                "feel": arrangement.get("feel", "original"),
+                "accompaniment_bpm": arrangement["accompaniment_bpm"],
                 "support_gain": round(float(support_gain), 4),
                 "mastering": mastering,
                 "seed": request.seed,

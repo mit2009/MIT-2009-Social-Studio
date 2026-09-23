@@ -4,7 +4,7 @@ Danny wants this to become a tool you can understand, challenge, improve, and po
 
 ## Latest direction, September 22
 
-Danny clarified that audio should make a self-identified non-musical person feel musical: their own phrase, thoughtfully developed by convincing instrumental ensembles. No intelligible sung words and no bed/effects buckets. Read ORCHESTRATION-TRIAL.md first. The current preview has Connect branding, one musical input and a local melody-check tool. Danny accepted the melody check and requires the app to be free. Listening review rejected the first local model drafts for insufficient sound quality. The current engine performs the accepted score with recorded grand piano, strings, bass and percussion, plus heuristic accompaniment. Listen before concluding that the professional-quality goal is met. See LOCAL-MUSIC.md for the free instrument setup. The earlier complete procedural prototype is at `0cfe313`; the descriptions below explain that foundation, not a claim that its DSP output meets the new brief.
+Danny clarified that audio should make a self-identified non-musical person feel musical: their own phrase, thoughtfully developed by convincing instrumental ensembles. No intelligible sung words and no bed/effects buckets. Read ORCHESTRATION-TRIAL.md first. The current preview has Connect branding, one musical input and a local melody-check tool. Danny accepted the melody check and requires the app to be free. Listening review rejected the first local model drafts for insufficient sound quality. Danny then asked for upbeat, fun sounds that appeal to current college students and suggested moving away from piano. The current three leads are plucked synth, recorded electric guitar and recorded trumpet, with dance/funk grooves and short replies from the phrase. No new arrangement uses piano; accompaniment remains heuristic. Listen before concluding that the professional-quality goal is met. See LOCAL-MUSIC.md for the free instrument setup. The earlier complete procedural prototype is at `0cfe313`; the descriptions below explain that foundation, not a claim that its DSP output meets the new brief.
 
 ## The product hypothesis
 
@@ -12,7 +12,7 @@ Three meaningfully different possibilities → a human compares and selects → 
 
 ## Try it first
 
-Follow the root README, click **Try the sample project**, and complete one 15-second story. No account or API key is needed. The current arranger needs about 364 MB of recorded instruments and no GPU. Practice images and melody are generated locally. Read `service.py` for the rules, `jobs.py` for work handling, and `render.py` / `providers/arranged.py` for media. Run the tests before changing them.
+Follow the root README, click **Try the sample project**, and complete one 15-second story. No account or API key is needed. The current arranger needs about 489 MB of recorded instruments and no GPU. Practice images and melody are generated locally. Read `service.py` for the rules, `jobs.py` for work handling, and `render.py` / `providers/arranged.py` for media. Run the tests before changing them.
 
 ## What exists
 

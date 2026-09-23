@@ -13,7 +13,7 @@ from .store import Store, now, packed, uid, unpack
 from .styles import choose_styles
 
 STAGES = ("audio", "video", "text", "assembly")
-VERSION = "0.5.0"
+VERSION = "0.6.0"
 CANDIDATES = """SELECT c.*, (SELECT stars FROM ratings r WHERE r.candidate_id=c.id ORDER BY r.id DESC LIMIT 1)
 AS rating FROM candidates c"""
 

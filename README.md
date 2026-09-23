@@ -10,9 +10,9 @@ Built for Danny, Talla, and the 2.009 TAs, with a small student trial as the nex
 
 Danny's revised brief is a musical phrase interpreted by three convincing ensembles, with no recognizable lyrics. The interface now uses the Connect wordmark, supplied color palette and Outfit font, with one musical input and no bed/effects controls.
 
-The melody check extracts estimated notes and plays a voice-free instrumental guide. **Make three versions** now performs the accepted notes with recorded instruments: Piano house, Piano & strings, and Acoustic jazz trio. A recorded Steinway grand carries the melody; separate parts provide harmony, bass, percussion and phrasing. No API account, subscription or paid generation service is used. A one-time instrument download is required; see [LOCAL-MUSIC.md](docs/LOCAL-MUSIC.md).
+The melody check extracts estimated notes and plays a voice-free instrumental guide. **Make three versions** now offers three upbeat interpretations: Club bounce (plucked synth and club beat), Indie dance (electric guitar and plucked strings), and Brass bounce (trumpet, brass punches and a funk groove). None uses piano. Separate parts provide harmony, bass, percussion and replies using fragments of the phrase. No API account, subscription or paid generation service is used. A one-time instrument download is required; see [LOCAL-MUSIC.md](docs/LOCAL-MUSIC.md).
 
-The goal remains convincing ensemble performances in which the person recognizes their own phrase. Listening review rejected the initial model drafts for insufficient sound quality. The recorded-instrument arranger preserves the lead pitches, note order and relative onsets, and builds accompaniment from those notes. This remains a listening experiment; automated checks do not establish convincing musicianship. The earlier voice-effects experiments remain collapsed in history, with their files unchanged.
+The goal remains convincing ensemble performances in which the person recognizes their own phrase. Listening review rejected the initial model drafts for insufficient sound quality. The local arranger combines recorded instruments with deliberately electronic voices, preserves the lead pitches, note order and relative onsets, and builds accompaniment from those notes. This remains a listening experiment; automated checks do not establish convincing musicianship. The earlier voice-effects experiments remain collapsed in history, with their files unchanged.
 
 The existing comparison/rating/selection, video, alpha Keyword, assembly, provenance and approval/export infrastructure remains. The original procedural release is preserved at `0cfe313`.
 
@@ -41,7 +41,7 @@ Click **Try the sample project** or open a saved project, then **Find my melody*
 .venv/bin/python scripts/install_instruments.py
 ```
 
-Then click **Make three versions**, compare the three drafts, rate and select one. The setup downloads about 364 MB of CC0 instrument recordings into ignored `data/`; rendering works locally without a model or GPU. Your audio remains on this Mac.
+Then click **Make three versions**, compare the three drafts, rate and select one. The setup downloads about 489 MB of CC0 instrument recordings into ignored `data/`; rendering works locally without a model or GPU. Your audio remains on this Mac.
 
 ## Keep your work
 

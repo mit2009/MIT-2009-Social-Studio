@@ -1,6 +1,6 @@
 # Architecture and developer guide
 
-> Current audio uses `providers/arranged.py`: a local sampler performs the accepted score using recorded CC0 instruments. `melody.py` prepares the note guide; the worker validates both score and guide hashes. The HTTP route requests three free drafts. Earlier MLX and DSP adapters remain for history/regression. See LOCAL-MUSIC.md for setup and musical limits.
+> Current audio uses `providers/arranged.py`: a local sampler and electronic voices perform the accepted score. `providers/upbeat.py` writes the current no-piano grooves; `providers/electronic.py` supplies synth pluck, kick and clap. `melody.py` prepares the note guide; the worker validates both score and guide hashes. The HTTP route requests three free drafts. Earlier MLX and DSP adapters remain for history/regression. See LOCAL-MUSIC.md for setup and musical limits.
 
 ## One application
 
@@ -33,7 +33,8 @@ flowchart LR
 | `service.py` | Project/asset/candidate operations; selections, stale work, approvals, exports |
 | `store.py`, `schema.sql` | Short SQLite transactions, IDs, JSON serialization, data-path boundary |
 | `jobs.py` | Persisted batch queue, one worker, progress, restart recovery, explicit retry |
-| `providers/__init__.py`, `providers/arranged.py` | Audio request/result boundary, note-preserving arranger, sample player and mix |
+| `providers/__init__.py`, `providers/arranged.py` | Audio request/result boundary, original arranger, sample player and mix |
+| `providers/upbeat.py`, `providers/electronic.py` | Current no-piano arrangements and local electronic voices; accepted lead pitches/onsets preserved |
 | `instruments.json`, `scripts/install_instruments.py` | Pinned CC0 sample catalog and verified one-time download |
 | `providers/ensemble.py`, `providers/local.py` | Earlier model and DSP adapters retained for history/regression |
 | `render.py` | Video, transparent Keyword, and final assembly; audio orchestration |

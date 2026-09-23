@@ -1,6 +1,6 @@
 # 2.009 content pipeline playbook
 
-Status: free local musical-authorship prototype. The accepted melody score now drives three arrangements using recorded CC0 instruments. Listening review rejected the earlier model drafts for insufficient sound quality. Professional-quality success still requires listening; the earlier procedural prototype remains in Git. See ORCHESTRATION-TRIAL.md.
+Status: free local musical-authorship prototype. The accepted melody score now drives three arrangements using recorded CC0 instruments and locally synthesized electronic voices. Listening review rejected the earlier model drafts for insufficient sound quality. Professional-quality success still requires listening; the earlier procedural prototype remains in Git. See ORCHESTRATION-TRIAL.md.
 
 ## Purpose
 
@@ -20,9 +20,11 @@ Audio → Video → Text → Assembly. Generate 3 → Compare → Rate → Selec
 
 ## Audio
 
-The workflow must be free: no paid generation services, subscriptions, API credits, or automatic cloud fallback. Use the installed recorded instruments; no model or GPU is required for the current arranger. Keep the accepted melody check in the flow. Preserve its pitch sequence and relative onsets in the lead part. Vary accompaniment, articulation, dynamics and room sound; never substitute an unrelated tune.
+The workflow must be free: no paid generation services, subscriptions, API credits, or automatic cloud fallback. Use the installed recorded instruments and local electronic voices; no model or GPU is required for the current arranger. Keep the accepted melody check in the flow. Preserve its pitch sequence and relative onsets in the lead part. Vary accompaniment, articulation, dynamics and room sound; never substitute an unrelated tune.
 
 Help a self-identified non-musical person hear that they have a musical idea. One phrase is interpreted by three convincing instrumental ensembles. Retain recognizable melodic contribution, not sung words or the recorded voice. Use expressive phrasing, responsive parts, harmony and an intentional arc. No fourth Original Mix option; the original remains a listening reference. A simple synthesized guide is preparation, never the professional-performance claim. Human listening must assess both quality and recognizable contribution.
+
+The current audience is college students. Aim for a fun, immediate hook and a beat that invites movement, while keeping the interface simple. The three current auditions are Club bounce, Indie dance and Brass bounce: synth, electric-guitar and trumpet leads respectively, with no piano. This is a design hypothesis to test with students, not a claim about uniform taste. Accompaniment pulses at 136, 122 and 112 BPM; the accepted lead keeps its original expressive timing.
 
 Audio players skip opening silence. Once a melody guide exists, the reference starts just before its first detected note, skipping room noise before the phrase. Listening copies retain every internal pause and may be shorter than the 15-second masters. Saved originals, guide scores, candidate downloads, video timing and approved exports stay unchanged. Playback never starts without pressing Play.
 

@@ -23,7 +23,20 @@ def instrument_bank(tmp_path, monkeypatch):
     rate = 16000
     t = np.arange(rate * 2) / rate
     tone = 0.25 * np.sin(2 * np.pi * 261.6256 * t) * np.exp(-t)
-    for instrument in ("piano", "violin", "cello", "bass", "hat", "snare", "kick"):
+    for instrument in (
+        "guitar",
+        "trumpet",
+        "trombone",
+        "piano",
+        "violin",
+        "cello",
+        "violin_pizz",
+        "cello_pizz",
+        "bass",
+        "hat",
+        "snare",
+        "kick",
+    ):
         path = folder / f"{instrument}.wav"
         sf.write(path, tone, rate, subtype="PCM_16")
         data = path.read_bytes()
@@ -123,3 +136,41 @@ def test_worker_rejects_changed_score(studio, project, source_assets, instrument
     assert detail["jobs"][0]["status"] == "failed"
     assert "score changed" in detail["jobs"][0]["error"]
     assert not any(c["status"] == "ready" for c in detail["candidates"])
+
+
+@pytest.mark.parametrize("style,lead", [("dance", "synth_pluck"), ("chamber", "guitar"), ("jazz", "trumpet")])
+def test_upbeat_versions_keep_the_phrase_without_piano(style, lead):
+    score = {
+        "notes": [
+            {"midi": p, "start": t, "duration": 0.16}
+            for p, t in [(60, 0), (64, 0.48), (67, 2.8), (65, 3.2), (59, 14.8)]
+        ]
+    }
+    plan = arranged.arrange(score, style, 29, feel="upbeat")
+    melody = [e for e in plan["events"] if e["role"] == "melody"]
+    assert [(e["midi"], e["start"]) for e in melody] == [(n["midi"], n["start"]) for n in score["notes"]]
+    assert {e["instrument"] for e in melody} == {lead}
+    assert "piano" not in {e["instrument"] for e in plan["events"]}
+    assert any(e.get("part") == "phrase answer" for e in plan["events"])
+    for answer in (e for e in plan["events"] if e.get("part") == "phrase answer"):
+        assert not any(
+            n["start"] < answer["start"] + answer["duration"] and n["start"] + n["duration"] > answer["start"]
+            for n in score["notes"]
+        )
+    assert all(e["start"] >= 0 and e["start"] + e["duration"] <= 15.000001 for e in plan["events"])
+
+
+def test_electronic_voices_are_finite_pitched_and_repeatable():
+    from mit2009_studio.providers.electronic import VOICES, voice
+
+    for name in VOICES:
+        event = {"instrument": name, "midi": 60, "duration": 0.4, "velocity": 95, "start": 0.25}
+        a = voice(event)
+        assert a.shape[1] == 2 and np.isfinite(a).all()
+        assert 0.01 < np.max(np.abs(a)) < 1
+        assert np.array_equal(a, voice(event))
+    event["instrument"] = "synth_pluck"
+    y = voice(event)[1200:15000, 0]
+    nfft = 131072
+    fundamental = np.argmax(np.abs(np.fft.rfft(y * np.hanning(len(y)), n=nfft))) * media.SAMPLE_RATE / nfft
+    assert abs(fundamental - 261.6256) < 2
