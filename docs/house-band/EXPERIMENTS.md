@@ -1,6 +1,10 @@
 # House-band experiments — reproducible proposals
 
-**Status:** not executed. These are bounded experiment specifications for another coding agent after Danny reviews them. They do not authorize building the complete application or selecting a permanent architecture. Return to the [research brief](README.md) for rationale and the [inventory](INVENTORY.md) for each dependency's license/platform notes.
+**Status:** Danny has reviewed the research and started a bounded listening session with a new recording. Initial melody/dynamics checks and a three-candidate audio-only E01/E02/E04 pilot have been rendered. The pilot adds accompaniment and uses one seed; it is not the six-item solo control specified below. Listening review rejected the pilot for insufficient sound quality; do not generate more sampler variants as the next step. A single [E11 MRT2 performance trial](MRT2-TRIAL.md) received positive sound-quality feedback, followed by a request for stronger seed recognition. Two tighter-control comparisons have rendered. Danny confirmed that both work as choices and feel connected to the original seed; the other experiments remain unrun. They do not authorize building the complete application or selecting a permanent architecture. Return to the [research brief](README.md) for rationale and the [inventory](INVENTORY.md) for each dependency's license/platform notes.
+
+## Audio-only interpretation requirement
+
+The eventual student flow is record, hear interpretations and choose. Musical coaching and transcription approval must not be prerequisites. See [the audio-only test protocol](AUDIO-ONLY-INTERPRETATION.md). The hand-shaped crescendo is a development reference, not evidence of automatic interpretation.
 
 ## Common laboratory procedure
 
@@ -41,7 +45,7 @@ This is a file contract for experiments, not a new production schema:
 
 ## Smallest first audition: E01 + E02 + E04
 
-Use the current accepted 31-note melody. Locate it through the project's saved `melody_guide.score_path`, not by assuming the latest file found in a directory is accepted. The recorded guide SHA-256 is `a8c22205bf1498fd1dace47777dac56820392e410c3a3c23f618e63bb0c16c0e`; the accepted score SHA-256 is `44ba4997011855b25af51ab19989507786b54db7f6b224350823f94257143449`. If either differs, stop this replay and ask which guide should serve as the new reference; do not silently replace it.
+The original proposal used the accepted 31-note guide with SHA-256 `a8c22205bf1498fd1dace47777dac56820392e410c3a3c23f618e63bb0c16c0e` (score `44ba4997011855b25af51ab19989507786b54db7f6b224350823f94257143449`). Danny explicitly replaced that input with a new recording during the listening session. Use the new session's saved input manifest; do not revert to the old recording or infer acceptance of a guide from its being the newest file. The new detected notes and dynamics remain under development. For the next audio-only test, analyze the original recording afresh without feeding in hand-shaped guides or feedback. Keep score-only renderer comparisons labeled separately from end-to-end interpretation tests.
 
 Use the existing local renderer and one unchanged lead patch across all three methods, with the same mix/mastering target. Use seeds **2009** and **2010**. Produce six candidates, retain the existing guide as reference, and randomize audition order. No new model download, student UI or server needed. The faithful player's seeds may change dynamics slightly while keeping all note times/pitches. Musical differences between E02 and E04 must be structural, not merely different random velocity or instrument settings.
 

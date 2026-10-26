@@ -1,0 +1,45 @@
+{
+  "name": "One seed, six orchestration directions",
+  "project_duration_seconds": 15.0,
+  "profile": "lead",
+  "seed": 2009,
+  "scope": "Style-preset exploration. Instrumentation and groove may both change; exact instrument compliance requires listening.",
+  "variants": [
+    {
+      "label": "D",
+      "id": "strings",
+      "name": "String trio",
+      "style": "instrumental chamber music, intimate string trio, expressive solo violin melody, warm viola and cello accompaniment, natural bowing, small acoustic ensemble"
+    },
+    {
+      "label": "E",
+      "id": "brass",
+      "name": "Brass and drums",
+      "style": "instrumental New Orleans brass band, bold trumpet melody, trombone answers, tuba bass line, snare drum and bass drum, buoyant second line groove"
+    },
+    {
+      "label": "F",
+      "id": "marimba",
+      "name": "Marimba and hand drums",
+      "style": "instrumental acoustic Latin groove, resonant marimba lead melody, nylon string guitar, acoustic bass, congas and shakers, playful syncopated percussion"
+    },
+    {
+      "label": "G",
+      "id": "jazz",
+      "name": "Jazz quartet with saxophone",
+      "style": "instrumental small jazz quartet, warm tenor saxophone melody, mellow hollow body guitar, upright bass, brushed drums, relaxed swinging groove"
+    },
+    {
+      "label": "H",
+      "id": "indie",
+      "name": "Indie rock band",
+      "style": "instrumental indie rock band, expressive overdriven electric guitar melody, ringing rhythm guitar, energetic electric bass, punchy live drums, anthemic upbeat groove"
+    },
+    {
+      "label": "I",
+      "id": "orchestra",
+      "name": "Cinematic orchestra",
+      "style": "instrumental cinematic orchestra, soaring violin melody, sweeping string section, warm French horns, woodwinds, low cellos and double basses, orchestral percussion, expansive dramatic sound"
+    }
+  ]
+}

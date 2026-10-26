@@ -1,3 +1,85 @@
+# Orchestration sweep and portable listening pack — September 23, 2026
+
+Six real MRT2 outputs passed 15-second/48 kHz/stereo, finite-sample, immediate-start,
+peak and source-integrity checks. Their note-control arrays and source-time maps
+match B exactly; all raw model peaks are below full scale. Four control tests passed
+in 2.60 seconds. Ruff, JavaScript syntax and diff checks passed. The earlier full
+47-test result was not rerun for these isolated experiment and packaging scripts.
+
+Eleven MP3 listening copies were decoded and checked; all nine orchestrations
+retain exactly 15 seconds, with no full-scale decoded samples and true peaks below
+0 dBTP. ZIP integrity and member equality passed. Source and earlier masters are
+unchanged. Chrome showed all eleven playable files with no media errors; D/E
+playback, A-to-B pausing, and desktop layout were checked. The built-in preview
+crashed twice; Chrome worked. Feedback export displayed its prepared message, but
+actual downloaded-file receipt was not verified. All test form input was cleared.
+No new human ratings or selections were assigned.
+
+See [the reproducible trial](house-band/MRT2-TRIAL.md) and private sweep verification
+for measurements. Listening quality, recognition in the new styles, exact
+instrumentation, phone-browser behavior and results on unseen sources remain open.
+
+---
+
+# Third MRT2 style comparison — September 23, 2026
+
+Four melody-control tests passed in 1.27 seconds after adding an internal style
+argument. Ruff and diff checks passed. A real render exercised the argument and
+verified a 15-second, 48 kHz stereo export with a 5 ms audible start, −18.85 LUFS
+and −1.00 dBTP. C's note-control array and source-time mapping are identical to B.
+Original/source and all earlier audio hashes remain unchanged. Raw model audio
+contains 22 full-scale channel samples out of 1,536,000; passing final peak checks
+does not prove that model distortion is absent. C's listening evaluation is pending.
+See [the trial notes](house-band/MRT2-TRIAL.md) for exact reproduction and diagnostics.
+The existing 47-test full-suite result below predates this small style argument.
+
+---
+
+# MRT2 performance-engine audition — September 23, 2026
+
+47 tests passed in 50.84 seconds. Two existing upstream deprecation warnings
+remain. Four MRT2 control tests check note onsets, holds, releases, accompaniment
+registers, connected-note articulation, identical closer-profile controls and
+lead-profile interval/timing preservation after automatic octave placement.
+
+The first model import failed with MLX 0.32.2. Matching upstream's 0.31.2 pin
+resolved it; logs for both attempts are retained. One real MRT2 base render
+passed 15-second/48 kHz/stereo, finite-sample, true-peak, audible-start and source
+integrity checks. Actual measured true peak is -1.85 dBTP and loudness -17.99 LUFS.
+Generation uses a separate local runtime with Python network connections blocked.
+See [the reproducible trial](house-band/MRT2-TRIAL.md) for model/license pins,
+method, limitations and artifacts. The reference received a positive sound-quality
+result, with source recognition still needing improvement. Two new 15-second
+comparisons passed export and source-integrity checks. Listening evaluation retained
+both as viable interpretations with recognizable source material for this recording. Measured true peaks are −1.00 and
+−4.61 dBTP, with audible starts near 5 ms. Raw A contains three full-scale samples;
+B contains none. These diagnostics do not establish perceived sound quality.
+The original reference and source hashes remain unchanged.
+
+Listening review rejected the previous three sampler auditions for insufficient sound quality.
+Their earlier technical success is not a musical success or creative approval.
+
+---
+
+# Audio-only house-band pilot
+
+43 tests passed in 29.60 seconds for the isolated experiment, including five new
+checks for rising/falling/steady expression cues, source-event preservation,
+structural differences, deterministic plans and alternate project durations.
+Two existing upstream deprecation warnings remain. The app code is unchanged.
+
+The real three-candidate batch completed in 4.877 seconds on the current Mac.
+Each output is a distinct 15-second, 48 kHz stereo WAV with immediate audible
+signal and measured true peak below -1 dBTP. Source, normalized audio, initial
+guide and prior corrected-guide hashes remain unchanged. Analysis and rendering
+use no feedback text, manual crescendo or supplied climax timestamp. One seed
+and one common guitar lead were used. This is a development example, not an
+unseen-input test; musical arc, fidelity and ensemble quality require listening.
+The run, stems, used samples and verification records are retained under the
+private experiment folder. See [reproduction instructions](../experiments/README.md).
+
+---
+
 # Upbeat, no-piano audition revision
 
 38 tests passed in 44.19 seconds on September 22, 2026; Ruff and JavaScript syntax checks passed. Two existing upstream test-client deprecation warnings remain. New checks cover the three distinct lead instruments, exact accepted pitch/onset preservation, absence of piano, replies fitting rests, bounded event timing, deterministic finite electronic voices, and synth tuning. The full API/export regression uses synthetic instrument fixtures and does not establish real-instrument quality.

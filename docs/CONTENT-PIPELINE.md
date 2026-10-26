@@ -6,6 +6,10 @@ Status: free local musical-authorship prototype. The accepted melody score now d
 
 Danny requested broad open-source house-band research before further implementation. The future system may preserve, develop or substantially transform the input; exact melody preservation is a contract for conservative musicians, not a universal requirement for every experiment. The current implementation remains unchanged. See [the living research notebook](house-band/README.md) for the ranked-by-purpose inventory, 12 proposed experiments and a review stop before selecting an architecture. Keep the fixed 15-second project duration, no paid generation API, meaningful student contribution and human curation. Do not treat these proposals as approval to build the complete system.
 
+## Audio-only interpretation requirement
+
+Students should record, hear interpretations and choose, without explaining notes, crescendo timing or an intended story arc. The current coached melody checks are development exercises, not the eventual required student flow. Use feedback to evaluate automatic interpretation; do not feed hand-authored corrections into a run and label it audio-only. A new [bounded test protocol](house-band/AUDIO-ONLY-INTERPRETATION.md) defines this requirement. A separate audio-only pilot renders three listening candidates from the original recording; their sound quality did not meet the target. A separate [MRT2 performance trial](house-band/MRT2-TRIAL.md) received a positive sound-quality result and is retained as a listening reference, with source recognition still needing improvement. Two comparisons test stronger note guidance and automatic lead placement; both were retained as viable interpretations with recognizable source material. Retain both as viable choices; a single winner is unnecessary at this experimental stage. The production app is unchanged. A successful technical test is not a successful musical audition.
+
 ## Purpose
 
 Help people create entertaining, inspiring stories about MIT 2.009, supporting interest in the December 7, 2026 final presentations livestream. Enable student authorship through comparative judgment.
@@ -107,3 +111,7 @@ Small supervised Story Officer alpha in roughly two weeks; course photo library;
 2026-09-22, requirement revision: Exclude recognizable sung words and sound-bed/effects buckets. Musical ensembles should interpret the user's phrase with professional orchestration and support a sense of musical authorship. This supersedes the earlier DSP-style and Original Mix requirements. The earlier implementation decisions above remain historical.
 
 2026-09-22, branding: Danny supplied Graphics.zip. Its seven character icons and Outfit font match the existing Connect kit byte-for-byte; the palette and character sheets were visually inspected. Use the original Connect wordmark, Outfit and supplied colors rather than redrawing the logo.
+
+## Portable peer review of orchestration experiments
+
+A separate local listening pack now holds A–I, the seed and the plain melody reference. Six new ensemble directions preserve B's source-note controls. Reviewers can assess recognition and enjoyment separately, leave ratings blank, and keep more than one choice. Ensemble names describe requested directions and do not certify the exact generated instruments. The offline page sends no data; sharing is Danny's action. A [plain-language music guide](house-band/MUSIC-IN-PLAIN-LANGUAGE.md) supports discussion without adding required student controls. Measured dynamics are still not transmitted to the MRT2 band. Production app behavior is unchanged.

@@ -1,7 +1,7 @@
 {
-  "status": "proposed_not_executed",
-  "last_updated": "2026-09-22",
-  "requires_review_before_audio_implementation": true,
+  "status": "mrt2_two_connected_viable_choices",
+  "last_updated": "2026-09-23",
+  "requires_review_before_audio_implementation": false,
   "common": {
     "project": {
       "duration_seconds": 15.0,
@@ -28,7 +28,8 @@
     "source": "existing accepted melody score",
     "renderer": "existing renderer with identical lead patch across methods",
     "new_model_required": false,
-    "application_changes": false
+    "application_changes": false,
+    "status": "original_six_item_solo_control_not_run"
   },
   "experiments": [
     {
@@ -260,5 +261,90 @@
     "Benchmark latency and memory",
     "Listening outcomes",
     "Final application open-source license after component selection"
-  ]
+  ],
+  "review_scope": "Danny reviewed research and started bounded experiments; complete application and permanent architecture remain unapproved.",
+  "latest_pilot": {
+    "source": "fresh original-audio analysis; no feedback or corrected guide input",
+    "experiments": [
+      "E01-adapted",
+      "E02-adapted",
+      "E04-adapted"
+    ],
+    "candidate_count": 3,
+    "seed": 2009,
+    "lead": "recorded guitar in all three",
+    "deviations": [
+      "accompaniment added",
+      "uniform duration fit before transformations",
+      "one seed for initial listening"
+    ],
+    "listening_status": "rejected: sound quality did not meet the target"
+  },
+  "latest_performance_trial": {
+    "experiment": "E11",
+    "model": "MRT2 base",
+    "status": "sound_quality_positive_source_recognition_needs_improvement",
+    "candidate_count": 1,
+    "seed": 2009,
+    "notes_input": "freshly analyzed source audio",
+    "coaching_input": false,
+    "measured_dynamics_conditioning": false,
+    "application_changes": false,
+    "feedback": "Positive sound-quality result; source recognition requires further evaluation.",
+    "followup_feedback": "Source recognition remains incomplete despite the positive sound-quality result."
+  },
+  "latest_recognition_comparison": {
+    "experiment": "E11",
+    "profiles": [
+      "closer",
+      "lead"
+    ],
+    "candidate_count": 2,
+    "seed": 2009,
+    "status": "both_positive_seed_recognition_no_winner_requested",
+    "model": "MRT2 base",
+    "source": "same original recording, freshly analyzed",
+    "reference_preserved": true,
+    "manual_musical_corrections": false,
+    "measured_dynamics_conditioning": false,
+    "application_changes": false,
+    "feedback": "Both variants retained as viable choices with recognizable source material; no single winner selected.",
+    "candidate_attribution": [
+      "closer",
+      "lead"
+    ]
+  },
+  "latest_style_comparison": {
+    "experiment": "E11",
+    "profile": "lead",
+    "style": "instrumental dance pop, soaring melodic synthesizer lead, deep pulsing synth bass, punchy four on the floor kick, crisp handclaps, shimmering percussion, energetic uplifting club groove",
+    "candidate_count": 1,
+    "seed": 2009,
+    "status": "rendered_listening_pending",
+    "controls_identical_to": "mrt2-07-lead",
+    "application_changes": false
+  },
+  "latest_orchestration_sweep": {
+    "candidate_count": 6,
+    "labels": [
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I"
+    ],
+    "status": "rendered_listening_pending",
+    "profile": "lead",
+    "seed": 2009,
+    "source_controls_match_B": true,
+    "style_manifest": "orchestration-sweep.json",
+    "changes": [
+      "style description"
+    ],
+    "confounding": "Style may alter orchestration, groove and harmony together.",
+    "application_changes": false,
+    "share_pack_total_interpretations": 9,
+    "shared_externally": false
+  }
 }

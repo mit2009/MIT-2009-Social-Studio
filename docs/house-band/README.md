@@ -6,6 +6,10 @@ The student makes a tiny musical gesture. The software offers genuinely differen
 
 The strongest next step is a small comparative audition, not choosing one music-generation model. The investigation covers **64 distinct inventory repositories, 65 purpose-specific entries, and 67 dated repository evidence snapshots**. These are curated candidates, not an exhaustive catalog of every audio project. [Inventory](INVENTORY.md) · [12 experiment protocols](EXPERIMENTS.md) · [CSV](inventory.csv) · [Machine-readable inventory](inventory.json) · [Evidence snapshot](sources.json) · [Experiment parameters](experiment-plan.json).
 
+## Listening-session update
+
+Danny has reviewed the research and begun experiments with a new recording. Early guide checks exposed a missing expressive arc. His clarification is now a product requirement: the seed must be interpreted without musical coaching. See [the audio-only interpretation protocol](AUDIO-ONLY-INTERPRETATION.md). Hand-shaped demonstrations are references, not completed automatic interpretation. An isolated [audio-only pilot](../../experiments/README.md) now renders three adapted E01/E02/E04 interpretations from a fresh analysis; listening review rejected all three for insufficient sound quality. A single [MRT2 performance trial](MRT2-TRIAL.md) received a positive sound-quality result; source recognition still needs improvement. Two new comparisons test stronger note guidance and automatic lead placement; both were retained as viable interpretations with recognizable source material. Both are retained as viable choices, with no winner selected. Expressive fidelity and results on unseen recordings remain unresolved. The full application architecture remains undecided.
+
 ## What the research changes
 
 1. **MIDI is a useful common language, but an insufficient master record.** Keep original audio, continuous pitch and loudness, onset events, phrase boundaries, alternate note hypotheses and confidence. Export MIDI when a musician needs it. Tapping should produce useful rhythmic events without invented pitches; a whistle slide should not have to become rigid piano notes. Basic Pitch, pYIN and torchcrepe have different outputs and failure modes. [Basic Pitch](https://github.com/spotify/basic-pitch), [librosa](https://github.com/librosa/librosa), [torchcrepe](https://github.com/maxrmorrison/torchcrepe).
@@ -142,3 +146,7 @@ Before implementing an experiment, create an isolated environment/work directory
 | 2026-09-22 | Broad ecosystem research and 12 proposed experiments | 67 repository snapshots plus official model/inference documents; no new audio benchmarks. |
 | Pending | Danny chooses the first experiment | Keep architecture provisional. |
 | Pending | Record first listening results and installation locks | Update inventory test status and experiment outcomes; retain failures. |
+
+## Peer listening round
+
+Six additional orchestration directions (D–I) and a portable nine-version listening pack are ready. See [the trial record](MRT2-TRIAL.md) for fixed settings, reproduction and checks, and [Music in plain language](MUSIC-IN-PLAIN-LANGUAGE.md) for the vocabulary and current detection limits. Feedback remains pending for the new outputs. This is a bounded style comparison before tests on unfamiliar recordings, not an application architecture decision.
